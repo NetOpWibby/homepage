@@ -1,0 +1,20 @@
+{
+  "background_color": "#fff",
+  "display": "minimal-ui",
+  "icons": [
+    {
+      "sizes": "192x192",
+      "src": "logo-192.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "512x512",
+      "src": "logo-512.png",
+      "type": "image/png"
+    }
+  ],
+  "name": "Webb Page",
+  "short_name": "Webb Page",
+  "start_url": "/",
+  "theme_color": "#333"
+}
