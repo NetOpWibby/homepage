@@ -11,37 +11,42 @@
   }
 
   h2 {
+    font-weight: 800;
     margin-bottom: 1rem;
   }
 
   ul {
     width: 100%; height: calc(100% - 0.5rem);
 
-    column-fill: balance;
+    column-fill: auto;
     column-gap: 3rem;
     column-rule: 1px solid $inc-gray-3;
     column-width: 200px;
     font-size: 1rem;
     line-height: 1.55;
     list-style-type: circle;
-    white-space: pre-line;
+    padding-bottom: 2rem;
+    padding-left: 0.25rem;
+
+    li:hover {
+      list-style-type: disc;
+    }
   }
 
   a {
     color: $inc-blue-4;
+    font-weight: 600;
+
+    &:hover {
+      color: #0f4c81;
+    }
   }
 </style>
 
 <section>
-  <h2>Webbring</h2>
+  <h2>Webbring &middot; Friends &amp; acquaintances I find interesting</h2>
 
   <ul>
-    <!--/
-    <li>
-      <a href="" title=""></a>
-    </li>
-    /-->
-
     <li>
       <a href="http://analisesmith.com" title="">Analise Smith</a>
     </li>
@@ -51,8 +56,7 @@
     </li>
 
     <li>
-      <a href="https://www.arickacl.com" title="">Aricka Lewis</a><!--  /
-      <a href="https://hnyrecords.com" title="">The Honey Collective</a> -->
+      <a href="https://www.arickacl.com" title="">Aricka Lewis</a>
     </li>
 
     <li>
@@ -60,8 +64,7 @@
     </li>
 
     <li>
-      <a href="http://thatsbr.com" title="">Brigid Ryan</a><!--  /
-      <a href="https://heybougiemama.com" title="">Bougie Mama</a> -->
+      <a href="http://thatsbr.com" title="">Brigid Ryan</a>
     </li>
 
     <li>
@@ -121,12 +124,11 @@
     </li>
 
     <li>
-      <a href="https://jessicasmolinski.com" title="">Jessica Smolinski</a>
+      <a href="https://jesseyoungblood.com" title="">Jesse Youngblood</a>
     </li>
 
     <li>
-      <a href="https://jesseyoungblood.com" title="">Jesse Youngblood</a><!--  /
-      <a href="http://elmcitysoftware.com" title="">Elm City Software</a> -->
+      <a href="https://jessicasmolinski.com" title="">Jessica Smolinski</a>
     </li>
 
     <li>
@@ -166,8 +168,7 @@
     </li>
 
     <li>
-      <a href="https://www.madebybourn.com" title="">Kim Goulbourne</a><!--  /
-      <a href="https://www.youandsundry.com" title="">you & sundry</a> -->
+      <a href="https://www.madebybourn.com" title="">Kim Goulbourne</a>
     </li>
 
     <li>
@@ -183,8 +184,7 @@
     </li>
 
     <li>
-      <a href="https://sincerelyshantelle.com" title="">Lakeisha Webb</a><!--  /
-      <a href="https://webbythreads.com" title="">WebbyThreads</a> -->
+      <a href="https://sincerelyshantelle.com" title="">Lakeisha Webb</a>
     </li>
 
     <li>
@@ -212,8 +212,7 @@
     </li>
 
     <li>
-      <a href="https://mauricecherry.com" title="">Maurice Cherry</a><!--  /
-      <a href="https://revisionpath.com" title="">Revision Path</a> -->
+      <a href="https://mauricecherry.com" title="">Maurice Cherry</a>
     </li>
 
     <li>
@@ -237,8 +236,7 @@
     </li>
 
     <li>
-      <a href="https://reginegilbert.com" title="">Regine Gilbert</a><!--  /
-      <a href="https://www.skillshare.com/classes/Inclusive-UX-Designing-Websites-for-Everyone/297973484" title="">Inclusive UX</a> -->
+      <a href="https://reginegilbert.com" title="">Regine Gilbert</a>
     </li>
 
     <li>
@@ -250,8 +248,7 @@
     </li>
 
     <li>
-      <a href="http://www.sanglee.me" title="">Sang Lee</a><!--  /
-      <a href="https://twitch.tv/mrchowderclam" title="">Twitch</a> -->
+      <a href="http://www.sanglee.me" title="">Sang Lee</a>
     </li>
 
     <li>

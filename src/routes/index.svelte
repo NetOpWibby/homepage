@@ -1,7 +1,9 @@
 <script>
   import About from "~component/About.svelte";
   import Center from "~component/Center.svelte";
+  import Code from "~component/Code.svelte";
   import Webbring from "~component/Webbring.svelte";
+  import Webbsites from "~component/Webbsites.svelte";
 </script>
 
 <style type="text/scss">
@@ -9,17 +11,17 @@
   @import "@inc/uchu/src/scss/components/mixins";
 
   section {
-    padding: 1.75rem 1.5rem;
+    // padding: 1.75rem 1.5rem;
 
-    &:nth-of-type(3) {
-      border-top: 5px solid $inc-gray-3;
-      grid-area: 4 / 3 / 6 / 6;
-    }
+    // &:nth-of-type(3) {
+    //   border-top: 5px solid $inc-gray-3;
+    //   grid-area: 4 / 3 / 6 / 6;
+    // }
 
-    &:nth-of-type(4) {
-      border-right: 5px solid $inc-gray-3;
-      grid-area: 3 / 1 / 6 / 3;
-    }
+    // &:nth-of-type(4) {
+    //   border-right: 5px solid $inc-gray-3;
+    //   grid-area: 3 / 1 / 6 / 3;
+    // }
   }
 
   // p {
@@ -57,15 +59,6 @@
 
 <About/>
 <Webbring/>
-
-<section>
-  <h2>Products</h2>
-  <p>&hellip;</p>
-</section>
-
-<section>
-  <h2>Webbsites</h2>
-  <p>&hellip;</p>
-</section>
-
+<Code/>
+<Webbsites/>
 <Center/>

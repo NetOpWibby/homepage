@@ -7,6 +7,7 @@
   @import "@inc/uchu/src/scss/components/variables";
   @import "@inc/uchu/src/scss/components/mixins";
 
+  @include font-face(800, "../type/sans", "Lefty Sans");
   @include font-face(600, "../type/sans", "Lefty Sans");
   @include font-face(400, "../type/sans", "Lefty Sans");
 

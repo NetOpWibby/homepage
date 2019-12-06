@@ -15,7 +15,7 @@ body {
   min-width: 320px; min-height: 700px;
 
   font-size: 12px; // stylelint-disable declaration-property-unit-blacklist
-  overflow-x: hidden;
+  overflow: hidden; //
   padding-right: env(safe-area-inset-right);
   padding-left: env(safe-area-inset-left);
   position: relative;
