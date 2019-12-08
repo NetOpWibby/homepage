@@ -1,4 +1,5 @@
 <script>
+  import { createLink } from "~util";
 </script>
 
 <style type="text/scss">
@@ -35,15 +36,6 @@
       list-style-type: disc;
     }
   }
-
-  a {
-    color: $inc-blue-4;
-    font-weight: 600;
-
-    &:hover {
-      color: #0f4c81;
-    }
-  }
 </style>
 
 <section id="webb-sites">
@@ -51,69 +43,143 @@
 
   <ul>
     <li>
-      <a href="https://beachfront.digital" title="">Beachfront</a>
+      {@html createLink({
+        destination: "https://beachfront.digital",
+        title: "Beachfront product page",
+        wrappedText: "Beachfront"
+      })}
+
       &middot;
+
       Domain name portfolio management. Kinda abandoned but still works.
     </li>
 
     <li>
-      <a href="https://chew.sh" title="">Chew</a>
+      {@html createLink({
+        destination: "https://chew.sh",
+        title: "Chew product page",
+        wrappedText: "Chew"
+      })}
+
       &middot;
+
       Server-side analytics because we all use blockers.
     </li>
 
     <li>
-      <a href="https://chronver.org" title="">ChronVer</a>
+      {@html createLink({
+        destination: "https://chronver.org",
+        title: "ChronVer homepage",
+        wrappedText: "ChronVer"
+      })}
+
       &middot;
+
       SemVer doesn't make sense in 20XX so I made ChronVer.
     </li>
 
     <li>
-      <a href="https://dsgn.agency" title="">dsgn.</a>
+      {@html createLink({
+        destination: "https://dsgn.agency",
+        title: "dsgn. homepage",
+        wrappedText: "dsgn."
+      })}
+
       &middot;
+
       A design agency I made with Jesse Youngblood. Give us money and you'll be happy.
     </li>
 
     <li>
-      <a href="https://hikar.io" title="">hikariOS</a>
+      {@html createLink({
+        destination: "https://hikar.io",
+        title: "hikari product page",
+        wrappedText: "hikariOS"
+      })}
+
       &middot;
+
       Splash page for my operating system. Why are you smirking?
     </li>
 
     <li>
-      <a href="https://inc.sh" title="">Ideas Never Cease</a>
+      {@html createLink({
+        destination: "https://inc.sh",
+        title: "Ideas Never Cease homepage",
+        wrappedText: "Ideas Never Cease"
+      })}
+
       &middot;
+
       Parent company for my (obviously) endless ideas.
     </li>
 
     <li>
-      <a href="https://lefty.world" title="">Lefty World</a>
+      {@html createLink({
+        destination: "https://lefty.world",
+        title: "Lefty World homepage",
+        wrappedText: "Lefty World"
+      })}
+
       &middot;
+
       Lefties, our time has come!
     </li>
 
     <li>
-      <a href="https://socii.network" title="">Socii</a>
+      {@html createLink({
+        destination: "https://socii.network",
+        title: "Socii homepage",
+        wrappedText: "Socii"
+      })}
+
       &middot;
+
       I'm building a social network. Stop laughing.
     </li>
 
     <li>
-      <a href="https://blog.webb.page" title="">Webb Blog</a>
+      {@html createLink({
+        destination: "https://blog.webb.page",
+        title: "My blog",
+        wrappedText: "Webb Blog"
+      })}
+
       &middot;
+
       I write from time to time.
     </li>
 
     <li>
-      <a href="/" title="">Webb Page</a>
+      {@html createLink({
+        destination: "/",
+        title: "The Webb Page",
+        wrappedText: "Webb Page"
+      })}
+
       &middot;
+
       You're already here!
     </li>
 
+    <!--/
     <li>
-      <a href="https://weom.space" title="">WEÖM</a>
+      <a href="" rel="noopener noreferrer" target="_blank" title="">Webb Resume</a>
       &middot;
-      Wisdom Escapes Ordinary Minds
+      It would be really cool to have an interactive resume
+    </li>
+    /-->
+
+    <li>
+      {@html createLink({
+        destination: "https://weom.space",
+        title: "WEÖM homepage",
+        wrappedText: "WEÖM"
+      })}
+
+      &middot;
+
+      Wisdom Escapes Ordinary Minds...coming (back) soon
     </li>
   </ul>
 </section>

@@ -1,4 +1,5 @@
 <script>
+  import { createLink } from "~util";
 </script>
 
 <style type="text/scss">
@@ -43,15 +44,6 @@
       list-style-type: disc;
     }
   }
-
-  a {
-    color: $inc-blue-4;
-    font-weight: 600;
-
-    &:hover {
-      color: #0f4c81;
-    }
-  }
 </style>
 
 <section id="webb-code">
@@ -59,74 +51,158 @@
 
   <ul>
     <li>
-      <a href="https://code.webb.page/IdeasNeverCease/eslint-config" title="">@inc/eslint-config</a>
+      {@html createLink({
+        destination: "https://code.webb.page/IdeasNeverCease/eslint-config",
+        title: "Repo for @inc/eslint-config",
+        wrappedText: "@inc/eslint-config"
+      })}
+
       &middot;
+
       ESLint configuration for !NC projects
     </li>
 
     <li>
-      <a href="https://code.webb.page/IdeasNeverCease/gotql" title="">@inc/gotql</a>
+      {@html createLink({
+        destination: "https://code.webb.page/IdeasNeverCease/gotql",
+        title: "Repo for @inc/gotql",
+        wrappedText: "@inc/gotql"
+      })}
+
       &middot;
+
       Write GraphQL queries as objects instead of strings
     </li>
 
     <li>
-      <a href="https://code.webb.page/IdeasNeverCease/here" title="">@inc/here</a>
+      {@html createLink({
+        destination: "https://code.webb.page/IdeasNeverCease/here",
+        title: "Repo for @inc/here",
+        wrappedText: "@inc/here"
+      })}
+
       &middot;
+
       A dependency-free server for single page apps
     </li>
 
     <li>
-      <a href="https://code.webb.page/IdeasNeverCease/stylelint-config" title="">@inc/stylelint-config</a>
+      {@html createLink({
+        destination: "https://code.webb.page/IdeasNeverCease/stylelint-config",
+        title: "Repo for @inc/stylelint-config",
+        wrappedText: "@inc/stylelint-config"
+      })}
+
       &middot;
+
       Stylelint configuration for !NC projects
     </li>
 
     <li>
-      <a href="https://code.webb.page/hikari/Aries" title="">Aries</a>
+      {@html createLink({
+        destination: "https://code.webb.page/hikari/Aries",
+        title: "Repo for Aries",
+        wrappedText: "Aries"
+      })}
+
       &middot;
+
       Browser for hikari
     </li>
 
     <li>
-      <a href="https://code.webb.page/Webb/Blog" title="">Blog</a>
+      {@html createLink({
+        destination: "https://code.webb.page/Webb/Blog",
+        title: "Repo for my blog",
+        wrappedText: "Blog"
+      })}
+
       &middot;
+
       My personal blog
     </li>
 
     <li>
-      <a href="https://code.webb.page/ChronVer/chronver" title="">chronver</a>
+      {@html createLink({
+        destination: "https://code.webb.page/ChronVer/chronver",
+        title: "Repo for chronver",
+        wrappedText: "chronver"
+      })}
+
       &middot;
+
       The chronological versioner
     </li>
 
     <li>
-      <a href="https://code.webb.page/ChronVer/chronver-regex" title="">chronver-regex</a>
+      {@html createLink({
+        destination: "https://code.webb.page/ChronVer/chronver-regex",
+        title: "Repo for chronver-regex",
+        wrappedText: "chronver-regex"
+      })}
+
       &middot;
+
       Regular expression for matching chronver versions
     </li>
 
     <li>
-      <a href="https://code.webb.page/ChronVer/chronver.org" title="">chronver.org</a>
+      {@html createLink({
+        destination: "https://code.webb.page/ChronVer/chronver.org",
+        title: "Repo for chronver.org",
+        wrappedText: "chronver.org"
+      })}
+
       &middot;
+
       Chronologic Versioning spec and website
     </li>
 
     <li>
-      <a href="https://code.webb.page/ChronVer/spec" title="">spec</a>
+      {@html createLink({
+        destination: "https://code.webb.page/Webb/Homepage",
+        title: "Repo for my homepage",
+        wrappedText: "Homepage"
+      })}
+
       &middot;
+
+      The site you're currently on
+    </li>
+
+    <li>
+      {@html createLink({
+        destination: "https://code.webb.page/ChronVer/spec",
+        title: "Repo for chronver's spec",
+        wrappedText: "spec"
+      })}
+
+      &middot;
+
       Chronologic Versioning Specification
     </li>
 
     <li>
-      <a href="https://code.webb.page/sveltiest" title="">sveltiest</a>
+      {@html createLink({
+        destination: "https://code.webb.page/sveltiest",
+        title: "Repo for Sveltiest",
+        wrappedText: "Sveltiest"
+      })}
+
       &middot;
+
       Sublime Text Syntax highlighting for Svelte 3 components.
     </li>
 
     <li>
-      <a href="https://code.webb.page/vne" title="">vne</a>
+      {@html createLink({
+        destination: "https://code.webb.page/vne",
+        title: "Repo for vne",
+        wrappedText: "vne"
+      })}
+
       &middot;
+
       A clever .env
     </li>
   </ul>

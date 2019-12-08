@@ -1,5 +1,4 @@
-<script>
-</script>
+<script></script>
 
 <style type="text/scss">
   @import "@inc/uchu/src/scss/components/variables";
@@ -34,5 +33,5 @@
 </style>
 
 <section>
-  <img alt="" src="memoji.png"/>
+  <img alt="Me, as an emoji" src="memoji.png"/>
 </section>

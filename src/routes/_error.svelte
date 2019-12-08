@@ -38,11 +38,9 @@
   <title>{status}</title>
 </svelte:head>
 
-<header class="header">
-  <h1>Whoops &middot; {status}</h1>
-</header>
-
 <section>
+  <h1>Whoops &middot; {status}</h1>
+
   {#if status === 404}
     <p>Go back <a href="." title="Back to the homepage">home</a></p>
   {:else}

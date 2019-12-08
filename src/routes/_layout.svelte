@@ -1,7 +1,4 @@
-<script>
-  import Navigation from "~component/Navigation.svelte";
-  export let segment;
-</script>
+<script></script>
 
 <style type="text/scss">
   @import "@inc/uchu/src/scss/components/variables";
@@ -27,6 +24,15 @@
     font-weight: 600;
   }
 
+  :global(a) {
+    color: $inc-blue-4;
+    font-weight: 600;
+
+    &:hover {
+      color: #0f4c81;
+    }
+  }
+
   main {
     position: relative;
     width: 100%;
@@ -43,59 +49,12 @@
       display: flex;
       flex-direction: column;
     }
-
-    // @media (min-width: 601px) {
-    //   &::after {
-    //     width: 1px; height: 100%;
-    //     top: 0; left: 149px;
-
-    //     background-color: $inc-gray-3;
-    //     content: "";
-    //     position: fixed;
-    //   }
-    // }
   }
-
-  // :global(.header) {
-  //   align-items: flex-end;
-  //   background-color: $inc-gray-1;
-  //   border-bottom: 1px solid $inc-gray-3;
-  //   display: flex;
-  //   font-weight: 400;
-  //   padding: 1rem 1.5rem;
-  //   position: sticky;
-  //   top: 0;
-  //   z-index: 1;
-
-  //   @media (min-width: 601px) {
-  //     height: 6.5rem;
-  //   }
-
-  //   @media (max-width: 600px) {
-  //     height: 8rem;
-  //   }
-
-  //   h1 {
-  //     font-size: 1.5rem;
-  //     font-style: italic;
-  //     line-height: 1;
-  //   }
-  // }
-
-  // :global(section) {
-  //   @media (max-width: 600px) {
-  //     &:last-of-type {
-  //       margin-bottom: 4rem;
-  //     }
-  //   }
-  // }
 </style>
 
 <svelte:head>
-  <meta property="og:site_name" content=""/>
+  <meta property="og:site_name" content="The Webb Page"/>
 </svelte:head>
-
-<!-- <Navigation {segment}/> -->
 
 <main>
   <slot></slot>

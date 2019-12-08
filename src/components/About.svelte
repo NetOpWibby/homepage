@@ -1,4 +1,5 @@
 <script>
+  import { createLink } from "~util";
 </script>
 
 <style type="text/scss">
@@ -15,6 +16,10 @@
     }
   }
 
+  span {
+    cursor: help;
+  }
+
   h2 {
     font-weight: 800;
     margin-bottom: 1rem;
@@ -24,33 +29,16 @@
     font-size: 1rem;
     line-height: 1.55;
   }
-
-  a {
-    color: $inc-blue-4;
-    font-weight: 600;
-
-    &:hover {
-      color: #0f4c81;
-    }
-  }
 </style>
 
 <section id="webb-about">
-<!--   <h2>
-    Homepage
-    <small>
-      [hōm&middot;pāj]
-      <em>noun Digital Technology</em>
-    </small>
-  </h2> -->
-
   <h2>Welcome to my homepage</h2>
 
-  <p>Hello there! I am Paul Anthony Webb and an amalgam of nouns: <span title="he made this word up">archi<em>tech</em></span>, <span title="ideas never cease!">dreamer</span>, <span>MMBN fanatic</span>, <span>lefty</span>, <span>musician</span>, <span>Earth Dragon</span>, <span title="if you care about that sort of thing">Aries</span>, <span>lover of puns and Dad jokes</span>, and just a general <span title="it's my site, i can type swear words">purveyor of awesome shit</span>.</p>
+  <p>Hello there! I am Paul Anthony Webb and an amalgam of nouns: <span title="I made this word up, it's basically a designer who also builds">archi<em>tech</em></span>, <span title="Ideas Never Cease!">dreamer</span>, <span title="I am striving to make parts of Megaman Battle Network a reality">MMBN fanatic</span>, <span title="We're the best!">lefty</span>, <span title="I used to make music and aspire to get back to it">musician</span>, <span title="1988 babeee!">Earth Dragon</span>, <span title="Interestingly, Aries and Dragons have similar traits so I'm double trouble">Aries</span>, <span title="So much so that I became a dad!">lover of puns and Dad jokes</span>, and just a general <span title="My Pinboard is full of all sorts of random things">purveyor of awesome shit</span>.</p>
 
   <br/>
 
   <h2>News</h2>
 
-  <p><strong>2019.07.26</strong> I am part of the first podcast to be added to a <strong>permanent</strong> collection in <a href="https://www.fastcompany.com/90382351/smithsonians-african-american-museum-selects-the-first-podcast-for-its-collection" title="Smithsonian’s African American Museum selects the first podcast for its collection">the Smithsonian’s National Museum of African American History and Culture</a> (Black Panther film roundtable episode).</p>
+  <p><strong>2019.07.26</strong> I am part of the first podcast to be added to a <strong>permanent</strong> collection in {@html createLink({ destination: "https://www.fastcompany.com/90382351/smithsonians-african-american-museum-selects-the-first-podcast-for-its-collection", title: "Smithsonian’s African American Museum selects the first podcast for its collection", wrappedText: "the Smithsonian’s National Museum of African American History and Culture" })} (Black Panther film roundtable episode).</p>
 </section>

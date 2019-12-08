@@ -1,4 +1,5 @@
 <script>
+  import { createLink } from "~util";
 </script>
 
 <style type="text/scss">
@@ -42,15 +43,6 @@
       list-style-type: disc;
     }
   }
-
-  a {
-    color: $inc-blue-4;
-    font-weight: 600;
-
-    &:hover {
-      color: #0f4c81;
-    }
-  }
 </style>
 
 <section id="webb-ring">
@@ -58,231 +50,459 @@
 
   <ul>
     <li>
-      <a href="http://analisesmith.com" title="">Analise Smith</a>
+      {@html createLink({
+        destination: "http://analisesmith.com",
+        title: "Analise's homepage",
+        wrappedText: "Analise Smith"
+      })}
     </li>
 
     <li>
-      <a href="https://annamariacoppi.com" title="">Anna Maria Coppi</a>
+      {@html createLink({
+        destination: "https://annamariacoppi.com",
+        title: "Anna's homepage",
+        wrappedText: "Anna Maria Coppi"
+      })}
     </li>
 
     <li>
-      <a href="https://www.arickacl.com" title="">Aricka Lewis</a>
+      {@html createLink({
+        destination: "https://www.arickacl.com",
+        title: "Aricka's homepage",
+        wrappedText: "Aricka Lewis"
+      })}
     </li>
 
     <li>
-      <a href="https://soundcloud.com/dubk617" title="">Brandon Cook</a>
+      {@html createLink({
+        destination: "https://soundcloud.com/dubk617",
+        title: "Brandon's Soundcloud",
+        wrappedText: "Brandon Cook"
+      })}
     </li>
 
     <li>
-      <a href="http://thatsbr.com" title="">Brigid Ryan</a>
+      {@html createLink({
+        destination: "http://thatsbr.com",
+        title: "Brigid's homepage",
+        wrappedText: "Brigid Ryan"
+      })}
     </li>
 
     <li>
-      <a href="http://conchan.cc" title="">Constance Chan</a>
+      {@html createLink({
+        destination: "http://conchan.cc",
+        title: "Constance's homepage",
+        wrappedText: "Constance Chan"
+      })}
     </li>
 
     <li>
-      <a href="https://micro.corntoole.com" title="">Cornelius Toole</a>
+      {@html createLink({
+        destination: "https://micro.corntoole.com",
+        title: "Cornelius' blog",
+        wrappedText: "Cornelius Toole"
+      })}
     </li>
 
     <li>
-      <a href="https://corygibbons.com" title="">Cory Gibbons</a>
+      {@html createLink({
+        destination: "https://corygibbons.com",
+        title: "Cory's homepage",
+        wrappedText: "Cory Gibbons"
+      })}
     </li>
 
     <li>
-      <a href="https://davidyarde.com" title="">David Yarde</a>
+      {@html createLink({
+        destination: "https://davidyarde.com",
+        title: "David's homepage",
+        wrappedText: "David Yarde"
+      })}
     </li>
 
     <li>
-      <a href="https://thatcreativeguy.com" title="">Dewon Hall</a>
+      {@html createLink({
+        destination: "https://thatcreativeguy.com",
+        title: "Dewon's portfolio",
+        wrappedText: "Dewon Hall"
+      })}
     </li>
 
     <li>
-      <a href="https://www.astrodim.space" title="">Dimmi Bolling</a>
+      {@html createLink({
+        destination: "https://www.astrodim.space",
+        title: "Dimmi's homepage",
+        wrappedText: "Dimmi Bolling"
+      })}
     </li>
 
     <li>
-      <a href="https://frnsys.com" title="">Francis Tseng</a>
+      {@html createLink({
+        destination: "https://frnsys.com",
+        title: "Francis' homepage",
+        wrappedText: "Francis Tseng"
+      })}
     </li>
 
     <li>
-      <a href="https://freshdaily.bandcamp.com" title="">Fresh Daily</a>
+      {@html createLink({
+        destination: "https://freshdaily.bandcamp.com",
+        title: "Fresh Daily's Bandcamp",
+        wrappedText: "Fresh Daily"
+      })}
     </li>
 
     <li>
-      <a href="http://gabrielmtn.github.io" title="">Gabriel Martin</a>
+      {@html createLink({
+        destination: "http://gabrielmtn.github.io",
+        title: "Gabriel's homepage",
+        wrappedText: "Gabriel Martin"
+      })}
     </li>
 
     <li>
-      <a href="https://geoffreychong.com" title="">Geoffrey Chong</a>
+      {@html createLink({
+        destination: "https://geoffreychong.com",
+        title: "Geoffrey's homepage",
+        wrappedText: "Geoffrey Chong"
+      })}
     </li>
 
     <li>
-      <a href="http://pizza-cat.blogspot.com" title="">Hugh Freeman</a>
+      {@html createLink({
+        destination: "http://pizza-cat.blogspot.com",
+        title: "Hugh's blog",
+        wrappedText: "Hugh Freeman"
+      })}
     </li>
 
     <li>
-      <a href="https://iheanyi.com" title="">Iheanyi Ekechukwu</a>
+      {@html createLink({
+        destination: "https://iheanyi.com",
+        title: "Iheanyi's homepage",
+        wrappedText: "Iheanyi Ekechukwu"
+      })}
     </li>
 
     <li>
-      <a href="http://jackielaryea.com" title="">Jacklyn Laryea</a>
+      {@html createLink({
+        destination: "http://jackielaryea.com",
+        title: "Jacklyn's homepage",
+        wrappedText: "Jacklyn Laryea"
+      })}
     </li>
 
     <li>
-      <a href="https://www.jamar.dev" title="">Jamar Torres</a>
+      {@html createLink({
+        destination: "https://www.jamar.dev",
+        title: "Jamar's homepage",
+        wrappedText: "Jamar Torres"
+      })}
     </li>
 
     <li>
-      <a href="https://jesseyoungblood.com" title="">Jesse Youngblood</a>
+      {@html createLink({
+        destination: "https://jesseyoungblood.com",
+        title: "Jesse's homepage",
+        wrappedText: "Jesse Youngblood"
+      })}
     </li>
 
     <li>
-      <a href="https://jessicasmolinski.com" title="">Jessica Smolinski</a>
+      {@html createLink({
+        destination: "https://jessicasmolinski.com",
+        title: "Jessica's homepage",
+        wrappedText: "Jessica Smolinski"
+      })}
     </li>
 
     <li>
-      <a href="https://jonathontoon.com" title="">Jonathon Toon</a>
+      {@html createLink({
+        destination: "https://jonathontoon.com",
+        title: "Jonathon's homepage",
+        wrappedText: "Jonathon Toon"
+      })}
     </li>
 
     <li>
-      <a href="http://www.smaragdine.net" title="">Jordan Green</a>
+      {@html createLink({
+        destination: "http://www.smaragdine.net",
+        title: "Jordan's homepage",
+        wrappedText: "Jordan Green"
+      })}
     </li>
 
     <li>
-      <a href="https://joshsender.com" title="">Josh Sender</a>
+      {@html createLink({
+        destination: "https://joshsender.com",
+        title: "Josh's portfolio",
+        wrappedText: "Josh Sender"
+      })}
     </li>
 
     <li>
-      <a href="https://www.jedmund.com" title="">Justin Edmund</a>
+      {@html createLink({
+        destination: "https://www.jedmund.com",
+        title: "Justin's homepage",
+        wrappedText: "Justin Edmund"
+      })}
     </li>
 
     <li>
-      <a href="https://www.kbrissy.com" title="">Karl Brisseaux</a>
+      {@html createLink({
+        destination: "https://www.kbrissy.com",
+        title: "Karl's homepage",
+        wrappedText: "Karl Brisseaux"
+      })}
     </li>
 
     <li>
-      <a href="https://kathyvarela.com" title="">Kathy Varela</a>
+      {@html createLink({
+        destination: "https://kathyvarela.com",
+        title: "Kathy's homepage",
+        wrappedText: "Kathy Varela"
+      })}
     </li>
 
     <li>
-      <a href="https://brisseaux.com" title="">Kervin Brisseaux</a>
+      {@html createLink({
+        destination: "https://brisseaux.com",
+        title: "Kervin's homepage",
+        wrappedText: "Kervin Brisseaux"
+      })}
     </li>
 
     <li>
-      <a href="https://kevindaum.org" title="">Kevin Daum</a>
+      {@html createLink({
+        destination: "https://kevindaum.org",
+        title: "Kevin's homepage",
+        wrappedText: "Kevin Daum"
+      })}
     </li>
 
     <li>
-      <a href="http://kevonticer.com" title="">KeVon Ticer</a>
+      {@html createLink({
+        destination: "http://kevonticer.com",
+        title: "KeVon's homepage",
+        wrappedText: "KeVon Ticer"
+      })}
     </li>
 
     <li>
-      <a href="https://www.madebybourn.com" title="">Kim Goulbourne</a>
+      {@html createLink({
+        destination: "https://www.madebybourn.com",
+        title: "Kim's homepage",
+        wrappedText: "Kim Goulbourne"
+      })}
     </li>
 
     <li>
-      <a href="https://www.luvnaturals.com" title="">Kim Love</a>
+      {@html createLink({
+        destination: "https://www.luvnaturals.com",
+        title: "Kim's homepage",
+        wrappedText: "Kim Love"
+      })}
     </li>
 
     <li>
-      <a href="https://korut.tumblr.com" title="">Korut</a>
+      {@html createLink({
+        destination: "https://korut.tumblr.com",
+        title: "Korut's blog",
+        wrappedText: "Korut"
+      })}
     </li>
 
     <li>
-      <a href="http://kumailht.com" title="">Kumail Hunaid</a>
+      {@html createLink({
+        destination: "http://kumailht.com",
+        title: "Kumail's homepage",
+        wrappedText: "Kumail Hunaid"
+      })}
     </li>
 
     <li>
-      <a href="https://sincerelyshantelle.com" title="">Lakeisha Webb</a>
+      {@html createLink({
+        destination: "https://sincerelyshantelle.com",
+        title: "Lakeisha's homepage",
+        wrappedText: "Lakeisha Webb"
+      })}
     </li>
 
     <li>
-      <a href="https://laurendorman.io" title="">Lauren Dorman</a>
+      {@html createLink({
+        destination: "https://laurendorman.io",
+        title: "Lauren's homepage",
+        wrappedText: "Lauren Dorman"
+      })}
     </li>
 
     <li>
-      <a href="http://cmdshiftdesign.com" title="">Liz Andrade</a>
+      {@html createLink({
+        destination: "http://cmdshiftdesign.com",
+        title: "Liz's homepage",
+        wrappedText: "Liz Andrade"
+      })}
     </li>
 
     <li>
-      <a href="loganfaerberdesign.com" title="">Logan Faerber</a>
+      {@html createLink({
+        destination: "http://loganfaerberdesign.com",
+        title: "Logan's homepage",
+        wrappedText: "Logan Faerber"
+      })}
     </li>
 
     <li>
-      <a href="http://www.spyroteknik.com" title="">Martin Bland</a>
+      {@html createLink({
+        destination: "http://www.spyroteknik.com",
+        title: "Martin's homepage",
+        wrappedText: "Martin Bland"
+      })}
     </li>
 
     <li>
-      <a href="https://www.isajeep.com" title="">Marvin Perry</a>
+      {@html createLink({
+        destination: "https://www.isajeep.com",
+        title: "Martin's homepage",
+        wrappedText: "Marvin Perry"
+      })}
     </li>
 
     <li>
-      <a href="http://insidae.com" title="">Matt Thomas</a>
+      {@html createLink({
+        destination: "http://insidae.com",
+        title: "Matt's homepage",
+        wrappedText: "Matt Thomas"
+      })}
     </li>
 
     <li>
-      <a href="https://mauricecherry.com" title="">Maurice Cherry</a>
+      {@html createLink({
+        destination: "https://mauricecherry.com",
+        title: "Maurice's homepage",
+        wrappedText: "Maurice Cherry"
+      })}
     </li>
 
     <li>
-      <a href="https://www.kickstarter.com/projects/miketoney/black-anime-lost-chill-dren-of-the-diaspora" title="">Michael Toney</a>
+      {@html createLink({
+        destination: "https://www.kickstarter.com/projects/miketoney/black-anime-lost-chill-dren-of-the-diaspora",
+        title: "Micheal's Kickstarter",
+        wrappedText: "Michael Toney"
+      })}
     </li>
 
     <li>
-      <a href="https://smirapdesigns.com" title="">Mike Karolos</a>
+      {@html createLink({
+        destination: "https://smirapdesigns.com",
+        title: "Mike's homepage",
+        wrappedText: "Mike Karolos"
+      })}
     </li>
 
     <li>
-      <a href="https://nathaniel.daught.me" title="">Nathaniel Daught</a>
+      {@html createLink({
+        destination: "https://nathaniel.daught.me",
+        title: "Nathaniel's homepage",
+        wrappedText: "Nathaniel Daught"
+      })}
     </li>
 
     <li>
-      <a href="http://olliebarker.co.uk" title="">Ollie Barker</a>
+      {@html createLink({
+        destination: "http://olliebarker.co.uk",
+        title: "Ollie's homepage",
+        wrappedText: "Ollie Barker"
+      })}
     </li>
 
     <li>
-      <a href="https://rsms.me" title="">Rasmus Andersson</a>
+      {@html createLink({
+        destination: "https://rsms.me",
+        title: "Rasmus' homepage",
+        wrappedText: "Rasmus Andersson"
+      })}
     </li>
 
     <li>
-      <a href="https://reginegilbert.com" title="">Regine Gilbert</a>
+      {@html createLink({
+        destination: "https://reginegilbert.com",
+        title: "Regine's homepage",
+        wrappedText: "Regine Gilbert"
+      })}
     </li>
 
     <li>
-      <a href="https://beautylynk.com" title="">Rica Elysee</a>
+      {@html createLink({
+        destination: "https://beautylynk.com",
+        title: "Rica's startup",
+        wrappedText: "Rica Elysee"
+      })}
     </li>
 
     <li>
-      <a href="https://betterlegends.com" title="">Sam Mameli</a>
+      {@html createLink({
+        destination: "https://betterlegends.com",
+        title: "Sam's homepage",
+        wrappedText: "Sam Mameli"
+      })}
     </li>
 
     <li>
-      <a href="http://www.sanglee.me" title="">Sang Lee</a>
+      {@html createLink({
+        destination: "http://www.sanglee.me",
+        title: "Sang's homepage",
+        wrappedText: "Sang Lee"
+      })}
     </li>
 
     <li>
-      <a href="http://selenarox.com" title="">Serena Rox</a>
+      {@html createLink({
+        destination: "http://selenarox.com",
+        title: "Serena's homepage",
+        wrappedText: "Serena Rox"
+      })}
     </li>
 
     <li>
-      <a href="http://www.illusivemedia.com" title="">Shomi Patwary</a>
+      {@html createLink({
+        destination: "http://www.illusivemedia.com",
+        title: "Shomi's portfolio",
+        wrappedText: "Shomi Patwary"
+      })}
     </li>
 
     <li>
-      <a href="https://punklabs.com" title="">Tara</a>
+      {@html createLink({
+        destination: "https://punklabs.com",
+        title: "Tara's homepage",
+        wrappedText: "Tara"
+      })}
     </li>
 
     <li>
-      <a href="https://mcwolf.bandcamp.com" title="">Wellington Netto</a>
+      {@html createLink({
+        destination: "https://mcwolf.bandcamp.com",
+        title: "Wellington's Bandcamp",
+        wrappedText: "Wellington Netto"
+      })}
     </li>
 
     <li>
-      <a href="https://wojtek.im" title="">Wojtek Witkowski</a>
+      {@html createLink({
+        destination: "https://wojtek.im",
+        title: "Wojtek's homepage",
+        wrappedText: "Wojtek Witkowski"
+      })}
     </li>
 
     <li>
-      <a href="https://blacksocialists.us" title="">Z</a>
+      {@html createLink({
+        destination: "https://blacksocialists.us",
+        title: "Z's homepage",
+        wrappedText: "Z"
+      })}
     </li>
   </ul>
 </section>
