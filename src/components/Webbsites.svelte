@@ -13,6 +13,10 @@
       border-right: 5px solid $inc-gray-3;
       grid-area: 3 / 1 / 6 / 3;
     }
+
+    @media(prefers-color-scheme: dark) {
+      border-color: $inc-gray-7;
+    }
   }
 
   h2 {

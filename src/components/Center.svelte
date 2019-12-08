@@ -22,6 +22,10 @@
       position: fixed;
       transform: rotate(-20deg);
     }
+
+    @media(prefers-color-scheme: dark) {
+      border-color: $inc-gray-7;
+    }
   }
 
   img {

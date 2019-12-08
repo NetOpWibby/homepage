@@ -4,19 +4,27 @@
   @import "@inc/uchu/src/scss/components/variables";
   @import "@inc/uchu/src/scss/components/mixins";
 
-  @include font-face(800, "../type/sans", "Lefty Sans");
-  @include font-face(600, "../type/sans", "Lefty Sans");
-  @include font-face(400, "../type/sans", "Lefty Sans");
+  @include font-face(800, "../type/sans", "Webb Sans");
+  @include font-face(600, "../type/sans", "Webb Sans");
+  @include font-face(400, "../type/sans", "Webb Sans");
 
   :global(html) {
     background-color: $inc-gray-1;
+
+    @media(prefers-color-scheme: dark) {
+      background-color: $inc-gray-8;
+    }
   }
 
   :global(x-app) {
-    @include font-sans("Lefty Sans");
+    @include font-sans("Webb Sans");
     color: $inc-gray-8;
     min-height: 100vh;
     display: flex;
+
+    @media(prefers-color-scheme: dark) {
+      color: $inc-gray-2;
+    }
   }
 
   :global(code) {
@@ -29,7 +37,15 @@
     font-weight: 600;
 
     &:hover {
-      color: #0f4c81;
+      color: #0f4c81; // Pantone 2020 Color of the Year
+    }
+
+    @media(prefers-color-scheme: dark) {
+      color: $inc-yellow-6;
+
+      &:hover {
+        color: $inc-yellow-9;
+      }
     }
   }
 

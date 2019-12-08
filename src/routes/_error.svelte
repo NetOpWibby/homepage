@@ -22,16 +22,6 @@
       margin-bottom: 1rem;
     }
   }
-
-  a {
-    color: $inc-blue-5;
-    text-decoration: underline;
-    transition: color 0.2s;
-
-    &:hover {
-      color: inherit;
-    }
-  }
 </style>
 
 <svelte:head>

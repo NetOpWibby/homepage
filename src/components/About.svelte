@@ -14,6 +14,10 @@
       border-right: 5px solid $inc-gray-3;
       grid-area: 1 / 1 / 3 / 4;
     }
+
+    @media(prefers-color-scheme: dark) {
+      border-color: $inc-gray-7;
+    }
   }
 
   span {

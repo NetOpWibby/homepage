@@ -16,6 +16,10 @@
     @media (max-width: 1330px) {
       border-bottom: 5px solid $inc-gray-3;
     }
+
+    @media(prefers-color-scheme: dark) {
+      border-color: $inc-gray-7;
+    }
   }
 
   h2 {
@@ -37,6 +41,10 @@
       column-fill: auto;
       height: calc(100% - 0.5rem);
       padding-bottom: 2rem;
+    }
+
+    @media(prefers-color-scheme: dark) {
+      column-rule: 1px solid $inc-gray-7;
     }
 
     li:hover {
