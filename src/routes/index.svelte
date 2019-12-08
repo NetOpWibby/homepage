@@ -10,20 +10,6 @@
   @import "@inc/uchu/src/scss/components/variables";
   @import "@inc/uchu/src/scss/components/mixins";
 
-  section {
-    // padding: 1.75rem 1.5rem;
-
-    // &:nth-of-type(3) {
-    //   border-top: 5px solid $inc-gray-3;
-    //   grid-area: 4 / 3 / 6 / 6;
-    // }
-
-    // &:nth-of-type(4) {
-    //   border-right: 5px solid $inc-gray-3;
-    //   grid-area: 3 / 1 / 6 / 3;
-    // }
-  }
-
   // p {
   //   font-size: 1rem;
   //   line-height: 1.55;

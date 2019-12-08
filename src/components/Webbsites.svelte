@@ -6,9 +6,12 @@
   @import "@inc/uchu/src/scss/components/mixins";
 
   section {
-    border-right: 5px solid $inc-gray-3;
-    grid-area: 3 / 1 / 6 / 3;
     padding: 1.75rem 1.5rem;
+
+    @media (min-width: 1331px) {
+      border-right: 5px solid $inc-gray-3;
+      grid-area: 3 / 1 / 6 / 3;
+    }
   }
 
   h2 {
@@ -17,13 +20,16 @@
   }
 
   ul {
-    width: 100%; height: calc(100% - 0.5rem);
-
     font-size: 1rem;
     line-height: 1.55;
     list-style-type: circle;
-    padding-bottom: 2rem;
     padding-left: 0.25rem;
+    width: 100%;
+
+    @media (min-width: 1331px) {
+      height: calc(100% - 0.5rem);
+      padding-bottom: 2rem;
+    }
 
     li:hover {
       list-style-type: disc;
@@ -40,7 +46,7 @@
   }
 </style>
 
-<section>
+<section id="webb-sites">
   <h2>Webbsites &middot; Experiences I've built</h2>
 
   <ul>
@@ -90,6 +96,12 @@
       <a href="https://socii.network" title="">Socii</a>
       &middot;
       I'm building a social network. Stop laughing.
+    </li>
+
+    <li>
+      <a href="https://blog.webb.page" title="">Webb Blog</a>
+      &middot;
+      I write from time to time.
     </li>
 
     <li>

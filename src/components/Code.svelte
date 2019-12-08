@@ -6,9 +6,16 @@
   @import "@inc/uchu/src/scss/components/mixins";
 
   section {
-    border-top: 5px solid $inc-gray-3;
-    grid-area: 4 / 3 / 6 / 6;
     padding: 1.75rem 1.5rem;
+
+    @media (min-width: 1331px) {
+      border-top: 5px solid $inc-gray-3;
+      grid-area: 4 / 3 / 6 / 6;
+    }
+
+    @media (max-width: 1330px) {
+      border-bottom: 5px solid $inc-gray-3;
+    }
   }
 
   h2 {
@@ -17,17 +24,20 @@
   }
 
   ul {
-    width: 100%; height: calc(100% - 0.5rem);
-
-    column-fill: auto;
     column-gap: 3rem;
     column-rule: 1px solid $inc-gray-3;
     column-width: 350px;
     font-size: 1rem;
     line-height: 1.55;
     list-style-type: circle;
-    padding-bottom: 2rem;
     padding-left: 0.25rem;
+    width: 100%;
+
+    @media (min-width: 1331px) {
+      column-fill: auto;
+      height: calc(100% - 0.5rem);
+      padding-bottom: 2rem;
+    }
 
     li:hover {
       list-style-type: disc;
@@ -44,8 +54,8 @@
   }
 </style>
 
-<section>
-  <h2>Code &middot; Open-source code I'm not ashamed to share</h2>
+<section id="webb-code">
+  <h2>Code &middot; Open-source things I'm not (totally) ashamed to share</h2>
 
   <ul>
     <li>
@@ -117,7 +127,7 @@
     <li>
       <a href="https://code.webb.page/vne" title="">vne</a>
       &middot;
-      A clever <code>.env</code>
+      A clever .env
     </li>
   </ul>
 </section>

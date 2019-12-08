@@ -28,13 +28,21 @@
   }
 
   main {
-    display: grid;
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
     position: relative;
     width: 100%;
+
+    @media (min-width: 1331px) {
+      display: grid;
+      grid-column-gap: 0;
+      grid-row-gap: 0;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+    }
+
+    @media (max-width: 1330px) {
+      display: flex;
+      flex-direction: column;
+    }
 
     // @media (min-width: 601px) {
     //   &::after {
@@ -48,31 +56,31 @@
     // }
   }
 
-  :global(.header) {
-    align-items: flex-end;
-    background-color: $inc-gray-1;
-    border-bottom: 1px solid $inc-gray-3;
-    display: flex;
-    font-weight: 400;
-    padding: 1rem 1.5rem;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+  // :global(.header) {
+  //   align-items: flex-end;
+  //   background-color: $inc-gray-1;
+  //   border-bottom: 1px solid $inc-gray-3;
+  //   display: flex;
+  //   font-weight: 400;
+  //   padding: 1rem 1.5rem;
+  //   position: sticky;
+  //   top: 0;
+  //   z-index: 1;
 
-    @media (min-width: 601px) {
-      height: 6.5rem;
-    }
+  //   @media (min-width: 601px) {
+  //     height: 6.5rem;
+  //   }
 
-    @media (max-width: 600px) {
-      height: 8rem;
-    }
+  //   @media (max-width: 600px) {
+  //     height: 8rem;
+  //   }
 
-    h1 {
-      font-size: 1.5rem;
-      font-style: italic;
-      line-height: 1;
-    }
-  }
+  //   h1 {
+  //     font-size: 1.5rem;
+  //     font-style: italic;
+  //     line-height: 1;
+  //   }
+  // }
 
   // :global(section) {
   //   @media (max-width: 600px) {
@@ -84,7 +92,7 @@
 </style>
 
 <svelte:head>
-  <meta property="og:site_name" content="Lefty World"/>
+  <meta property="og:site_name" content=""/>
 </svelte:head>
 
 <!-- <Navigation {segment}/> -->

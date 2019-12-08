@@ -7,11 +7,22 @@
 
   section {
     align-items: center;
-    border-right: 5px solid $inc-gray-3;
     display: flex;
-    grid-area: 3 / 3 / 4 / 4;
     justify-content: center;
     padding: 1.75rem 1.5rem;
+
+    @media (min-width: 1331px) {
+      border-right: 5px solid $inc-gray-3;
+      grid-area: 3 / 3 / 4 / 4;
+    }
+
+    @media (max-width: 1330px) {
+      bottom: -4rem; right: -6rem;
+
+      height: 250px;
+      position: fixed;
+      transform: rotate(-20deg);
+    }
   }
 
   img {

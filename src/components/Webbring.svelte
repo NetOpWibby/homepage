@@ -6,8 +6,15 @@
   @import "@inc/uchu/src/scss/components/mixins";
 
   section {
-    grid-area: 1 / 4 / 4 / 6;
     padding: 1.75rem 1.5rem;
+
+    @media (min-width: 1331px) {
+      grid-area: 1 / 4 / 4 / 6;
+    }
+
+    @media (max-width: 1330px) {
+      border-bottom: 5px solid $inc-gray-3;
+    }
   }
 
   h2 {
@@ -16,17 +23,20 @@
   }
 
   ul {
-    width: 100%; height: calc(100% - 0.5rem);
-
-    column-fill: auto;
     column-gap: 3rem;
     column-rule: 1px solid $inc-gray-3;
-    column-width: 200px;
+    column-width: 150px;
     font-size: 1rem;
     line-height: 1.55;
     list-style-type: circle;
-    padding-bottom: 2rem;
     padding-left: 0.25rem;
+    width: 100%;
+
+    @media (min-width: 1331px) {
+      column-fill: auto;
+      height: calc(100% - 0.5rem);
+      padding-bottom: 2rem;
+    }
 
     li:hover {
       list-style-type: disc;
@@ -43,7 +53,7 @@
   }
 </style>
 
-<section>
+<section id="webb-ring">
   <h2>Webbring &middot; Friends &amp; acquaintances I find interesting</h2>
 
   <ul>
