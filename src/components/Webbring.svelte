@@ -203,6 +203,14 @@
 
     <li>
       {@html createLink({
+        destination: "https://jacky.wtf",
+        title: "Jacky's homepage",
+        wrappedText: "Jacky Alcine"
+      })}
+    </li>
+
+    <li>
+      {@html createLink({
         destination: "https://www.jamar.dev",
         title: "Jamar's homepage",
         wrappedText: "Jamar Torres"
