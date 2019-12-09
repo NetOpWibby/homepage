@@ -15,6 +15,10 @@
       grid-area: 1 / 1 / 3 / 4;
     }
 
+    @media (max-width: 1330px) {
+      grid-area: 1 / 1 / 2 / 6;
+    }
+
     @media(prefers-color-scheme: dark) {
       border-color: $inc-gray-7;
     }

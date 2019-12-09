@@ -14,6 +14,11 @@
       grid-area: 3 / 1 / 6 / 3;
     }
 
+    @media (max-width: 1330px) {
+      border-bottom: 5px solid $inc-gray-3;
+      grid-area: 2 / 1 / 3 / 6;
+    }
+
     @media(prefers-color-scheme: dark) {
       border-color: $inc-gray-7;
     }

@@ -50,21 +50,13 @@
   }
 
   main {
+    display: grid;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     position: relative;
     width: 100%;
-
-    @media (min-width: 1331px) {
-      display: grid;
-      grid-column-gap: 0;
-      grid-row-gap: 0;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-    }
-
-    @media (max-width: 1330px) {
-      display: flex;
-      flex-direction: column;
-    }
   }
 </style>
 

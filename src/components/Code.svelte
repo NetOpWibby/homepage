@@ -16,6 +16,7 @@
 
     @media (max-width: 1330px) {
       border-bottom: 5px solid $inc-gray-3;
+      grid-area: 3 / 1 / 4 / 6;
     }
 
     @media(prefers-color-scheme: dark) {
