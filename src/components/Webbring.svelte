@@ -123,6 +123,14 @@
 
     <li>
       {@html createLink({
+        destination: "https://twitch.tv/tsm_daequan",
+        title: "Daequan's Twitch channel",
+        wrappedText: "Daequan"
+      })}
+    </li>
+
+    <li>
+      {@html createLink({
         destination: "https://davidyarde.com",
         title: "David's homepage",
         wrappedText: "David Yarde"
