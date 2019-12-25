@@ -83,6 +83,14 @@
 
     <li>
       {@html createLink({
+        destination: "https://massarrest.bandcamp.com",
+        title: "Boo's music",
+        wrappedText: "Boo Boo Howse"
+      })}
+    </li>
+
+    <li>
+      {@html createLink({
         destination: "https://soundcloud.com/dubk617",
         title: "Brandon's Soundcloud",
         wrappedText: "Brandon Cook"
