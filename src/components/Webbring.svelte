@@ -11,6 +11,8 @@
 
     @media (min-width: 1331px) {
       grid-area: 1 / 4 / 4 / 6;
+      overflow-x: auto;
+      overflow-y: hidden;
     }
 
     @media (max-width: 1330px) {
