@@ -26,7 +26,7 @@
     "@inc/stylelint-config": "^2019.12.1",
     "@inc/uchu": "^2019.12.1",
     "chronver": "^2019.10.2-7.1",
-    "cypress": "^3.8.0",
+    "cypress": "^3.8.1",
     "dedent": "^0.7.0",
     "eslint": "^6.8.0",
     "husky": "^3.1.0",
@@ -43,8 +43,8 @@
     "sass": "^1.24.0",
     "snazzy": "^8.0.0",
     "standardx": "^5.0.0",
-    "stylelint": "^12.0.0",
-    "stylelint-order": "^3.1.1",
+    "stylelint": "^12.0.1",
+    "stylelint-order": "^4.0.0",
     "svelte": "^3.16.7",
     "svelte-preprocess": "^3.3.0",
     "updates": "^9.3.3"
@@ -85,5 +85,5 @@
       "static"
     ]
   },
-  "version": "2019.12.28"
+  "version": "2020.01.02"
 }
