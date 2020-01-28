@@ -38,5 +38,5 @@
 </style>
 
 <section>
-  <img alt="Me, as an emoji" src="memoji.png"/>
+  <img alt="Me, as an emoji" src="/memoji.png"/>
 </section>
