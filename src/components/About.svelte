@@ -48,5 +48,7 @@
 
   <h2>News</h2>
 
-  <p><strong>2019.07.26</strong> I am part of the first podcast to be added to a <strong>permanent</strong> collection in {@html createLink({ destination: "https://www.fastcompany.com/90382351/smithsonians-african-american-museum-selects-the-first-podcast-for-its-collection", title: "Smithsonian’s African American Museum selects the first podcast for its collection", wrappedText: "the Smithsonian’s National Museum of African American History and Culture" })} (Black Panther film roundtable episode).</p>
+  <p><strong>2020.03.03</strong><br/>San Jose, CA is my new home and I'm working with an awesome agency for a certain produce company.</p><br/>
+
+  <p><strong>2019.07.26</strong><br/>I am part of the first podcast to be added to a <strong>permanent</strong> collection in {@html createLink({ destination: "https://www.fastcompany.com/90382351/smithsonians-african-american-museum-selects-the-first-podcast-for-its-collection", title: "Smithsonian’s African American Museum selects the first podcast for its collection", wrappedText: "the Smithsonian’s National Museum of African American History and Culture" })} (Black Panther film roundtable episode).</p>
 </section>
