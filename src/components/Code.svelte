@@ -12,6 +12,8 @@
     @media (min-width: 1331px) {
       border-top: 5px solid $inc-gray-3;
       grid-area: 4 / 3 / 6 / 6;
+      overflow-x: auto;
+      overflow-y: hidden;
     }
 
     @media (max-width: 1330px) {
@@ -61,16 +63,17 @@
   <ul>
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/IdeasNeverCease/eslint-config",
-        title: "Repo for @inc/eslint-config",
-        wrappedText: "@inc/eslint-config"
+        destination: "https://code.webb.page/Webb/config-eslint",
+        title: "Repo for @webb/config-eslint",
+        wrappedText: "@webb/config-eslint"
       })}
 
       &middot;
 
-      ESLint configuration for !NC projects
+       Opinionated ESLint configuration
     </li>
 
+    <!--/
     <li>
       {@html createLink({
         destination: "https://code.webb.page/IdeasNeverCease/gotql",
@@ -82,7 +85,9 @@
 
       Write GraphQL queries as objects instead of strings
     </li>
+    /-->
 
+    <!--/
     <li>
       {@html createLink({
         destination: "https://code.webb.page/IdeasNeverCease/here",
@@ -94,19 +99,106 @@
 
       A dependency-free server for single page apps
     </li>
+    /-->
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/IdeasNeverCease/stylelint-config",
-        title: "Repo for @inc/stylelint-config",
-        wrappedText: "@inc/stylelint-config"
+        destination: "https://code.webb.page/Webb/config-prettier",
+        title: "Repo for @webb/config-prettier",
+        wrappedText: "@webb/config-prettier"
       })}
 
       &middot;
 
-      Stylelint configuration for !NC projects
+       Opinionated Prettier configuration
     </li>
 
+    <li>
+      {@html createLink({
+        destination: "https://code.webb.page/Webb/config-stylelint",
+        title: "Repo for @webb/config-stylelint",
+        wrappedText: "@webb/config-stylelint"
+      })}
+
+      &middot;
+
+       Opinionated Stylelint configuration
+    </li>
+
+    <li>
+      {@html createLink({
+        destination: "https://code.webb.page/Webb/console",
+        title: "Repo for @webb/console",
+        wrappedText: "@webb/console"
+      })}
+
+      &middot;
+
+      Print console messages in STYLE
+    </li>
+
+    <li>
+      {@html createLink({
+        destination: "https://code.webb.page/Webb/ensure-database",
+        title: "Repo for @webb/ensure-database",
+        wrappedText: "@webb/ensure-database"
+      })}
+
+      &middot;
+
+      Ensure your RethinkDB database exists
+    </li>
+
+    <li>
+      {@html createLink({
+        destination: "https://code.webb.page/Webb/ensure-table",
+        title: "Repo for @webb/ensure-table",
+        wrappedText: "@webb/ensure-table"
+      })}
+
+      &middot;
+
+      Ensure your RethinkDB table exists
+    </li>
+
+    <li>
+      {@html createLink({
+        destination: "https://code.webb.page/Webb/order-object",
+        title: "Repo for @webb/order-object",
+        wrappedText: "@webb/order-object"
+      })}
+
+      &middot;
+
+      Ensure your Object keys are in order
+    </li>
+
+    <li>
+      {@html createLink({
+        destination: "https://code.webb.page/Webb/test",
+        title: "Repo for @webb/test",
+        wrappedText: "@webb/test"
+      })}
+
+      &middot;
+
+      Tiny, simple test runner
+    </li>
+
+
+    <li>
+      {@html createLink({
+        destination: "https://code.webb.page/Webb/validate-email",
+        title: "Repo for @webb/validate-email",
+        wrappedText: "@webb/validate-email"
+      })}
+
+      &middot;
+
+      Pretty good email validation
+    </li>
+
+    <!--/
     <li>
       {@html createLink({
         destination: "https://code.webb.page/hikari/Aries",
@@ -118,6 +210,7 @@
 
       Browser for hikari
     </li>
+    /-->
 
     <li>
       {@html createLink({
@@ -129,6 +222,18 @@
       &middot;
 
       My personal blog
+    </li>
+
+    <li>
+      {@html createLink({
+        destination: "https://code.webb.page/Webb/Homepage",
+        title: "Repo for my homepage",
+        wrappedText: "Homepage"
+      })}
+
+      &middot;
+
+      The site you're currently on
     </li>
 
     <li>
@@ -165,18 +270,6 @@
       &middot;
 
       Chronologic Versioning spec and website
-    </li>
-
-    <li>
-      {@html createLink({
-        destination: "https://code.webb.page/Webb/Homepage",
-        title: "Repo for my homepage",
-        wrappedText: "Homepage"
-      })}
-
-      &middot;
-
-      The site you're currently on
     </li>
 
     <li>
