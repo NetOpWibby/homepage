@@ -63,7 +63,7 @@
   <ul>
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/Webb/config-eslint",
+        destination: "https://github.com/NetOperatorWibby/config-eslint",
         title: "Repo for @webb/config-eslint",
         wrappedText: "@webb/config-eslint"
       })}
@@ -73,37 +73,9 @@
        Opinionated ESLint configuration
     </li>
 
-    <!--/
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/IdeasNeverCease/gotql",
-        title: "Repo for @inc/gotql",
-        wrappedText: "@inc/gotql"
-      })}
-
-      &middot;
-
-      Write GraphQL queries as objects instead of strings
-    </li>
-    /-->
-
-    <!--/
-    <li>
-      {@html createLink({
-        destination: "https://code.webb.page/IdeasNeverCease/here",
-        title: "Repo for @inc/here",
-        wrappedText: "@inc/here"
-      })}
-
-      &middot;
-
-      A dependency-free server for single page apps
-    </li>
-    /-->
-
-    <li>
-      {@html createLink({
-        destination: "https://code.webb.page/Webb/config-prettier",
+        destination: "https://github.com/NetOperatorWibby/config-prettier",
         title: "Repo for @webb/config-prettier",
         wrappedText: "@webb/config-prettier"
       })}
@@ -115,7 +87,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/Webb/config-stylelint",
+        destination: "https://github.com/NetOperatorWibby/config-stylelint",
         title: "Repo for @webb/config-stylelint",
         wrappedText: "@webb/config-stylelint"
       })}
@@ -127,7 +99,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/Webb/console",
+        destination: "https://github.com/NetOperatorWibby/console",
         title: "Repo for @webb/console",
         wrappedText: "@webb/console"
       })}
@@ -139,7 +111,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/Webb/ensure-database",
+        destination: "https://github.com/NetOperatorWibby/ensure-database",
         title: "Repo for @webb/ensure-database",
         wrappedText: "@webb/ensure-database"
       })}
@@ -151,7 +123,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/Webb/ensure-table",
+        destination: "https://github.com/NetOperatorWibby/ensure-table",
         title: "Repo for @webb/ensure-table",
         wrappedText: "@webb/ensure-table"
       })}
@@ -163,7 +135,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/Webb/order-object",
+        destination: "https://github.com/NetOperatorWibby/order-object",
         title: "Repo for @webb/order-object",
         wrappedText: "@webb/order-object"
       })}
@@ -175,7 +147,19 @@
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/Webb/test",
+        destination: "https://github.com/NetOperatorWibby/stringify-object",
+        title: "Repo for @webb/stringify-object",
+        wrappedText: "@webb/stringify-object"
+      })}
+
+      &middot;
+
+      Format objects the way you want
+    </li>
+
+    <li>
+      {@html createLink({
+        destination: "https://github.com/NetOperatorWibby/test",
         title: "Repo for @webb/test",
         wrappedText: "@webb/test"
       })}
@@ -188,7 +172,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/Webb/validate-email",
+        destination: "https://github.com/NetOperatorWibby/validate-email",
         title: "Repo for @webb/validate-email",
         wrappedText: "@webb/validate-email"
       })}
@@ -198,23 +182,9 @@
       Pretty good email validation
     </li>
 
-    <!--/
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/hikari/Aries",
-        title: "Repo for Aries",
-        wrappedText: "Aries"
-      })}
-
-      &middot;
-
-      Browser for hikari
-    </li>
-    /-->
-
-    <li>
-      {@html createLink({
-        destination: "https://code.webb.page/Webb/Blog",
+        destination: "https://github.com/NetOperatorWibby/blog",
         title: "Repo for my blog",
         wrappedText: "Blog"
       })}
@@ -226,7 +196,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/Webb/Homepage",
+        destination: "https://github.com/NetOperatorWibby/homepage",
         title: "Repo for my homepage",
         wrappedText: "Homepage"
       })}
@@ -238,7 +208,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/ChronVer/chronver",
+        destination: "https://github.com/ChronVer/chronver",
         title: "Repo for chronver",
         wrappedText: "chronver"
       })}
@@ -250,9 +220,9 @@
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/ChronVer/chronver-regex",
-        title: "Repo for chronver-regex",
-        wrappedText: "chronver-regex"
+        destination: "https://github.com/ChronVer/regex",
+        title: "Repo for @chronver/regex",
+        wrappedText: "@chronver/regex"
       })}
 
       &middot;
@@ -262,7 +232,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/ChronVer/chronver.org",
+        destination: "https://github.com/ChronVer/homepage",
         title: "Repo for chronver.org",
         wrappedText: "chronver.org"
       })}
@@ -274,7 +244,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/ChronVer/spec",
+        destination: "https://github.com/ChronVer/spec",
         title: "Repo for chronver's spec",
         wrappedText: "spec"
       })}
@@ -286,7 +256,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/sveltiest",
+        destination: "https://github.com/NetOperatorWibby/sveltiest",
         title: "Repo for Sveltiest",
         wrappedText: "Sveltiest"
       })}
@@ -298,7 +268,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://code.webb.page/vne",
+        destination: "https://github.com/NetOperatorWibby/vne",
         title: "Repo for vne",
         wrappedText: "vne"
       })}

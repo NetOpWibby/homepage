@@ -1,3 +1,3 @@
 {
-  extends: "@inc"
+  extends: "./node_modules/@webb/config-eslint"
 }

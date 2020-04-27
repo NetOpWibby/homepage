@@ -65,8 +65,4 @@ noscript {
 ::selection {
   background-color: uchu.$inc-yellow-1;
   color: rgba(uchu.$inc-black, 0.8);
-
-  // @media(prefers-color-scheme: dark) {
-  //   background-color: uchu.$inc-yellow-4;
-  // }
 }

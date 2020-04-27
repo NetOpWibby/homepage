@@ -8,7 +8,6 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    // padding: 1.75rem 1.5rem;
 
     @media (min-width: 1331px) {
       border-right: 5px solid $inc-gray-3;

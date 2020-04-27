@@ -105,6 +105,7 @@ export default {
         module: true
       })
     ],
+    preserveEntrySignatures: "strict",
     onwarn
   },
 
