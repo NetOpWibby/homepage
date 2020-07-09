@@ -229,7 +229,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://www.jamar.dev",
+        destination: "https://projectbirthday.world",
         title: "Jamar's homepage",
         wrappedText: "Jamar Torres"
       })}
