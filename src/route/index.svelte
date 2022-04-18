@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import About from "~component/About.svelte";
   import Center from "~component/Center.svelte";
   import Code from "~component/Code.svelte";
@@ -6,10 +6,7 @@
   import Webbsites from "~component/Webbsites.svelte";
 </script>
 
-<style type="text/scss">
-  @import "@inc/uchu/src/scss/components/variables";
-  @import "@inc/uchu/src/scss/components/mixins";
-</style>
+<style lang="scss"></style>
 
 <svelte:head>
   <title>The Webb Page</title>

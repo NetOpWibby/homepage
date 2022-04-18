@@ -1,58 +1,37 @@
-<script>
+<script lang="ts">
   import { createLink } from "~util";
 </script>
 
-<style type="text/scss">
-  @import "@inc/uchu/src/scss/components/variables";
-  @import "@inc/uchu/src/scss/components/mixins";
-
+<style lang="scss">
   section {
-    padding: 1.75rem 1.5rem;
-
     @media (min-width: 1331px) {
-      border-top: 5px solid $inc-gray-3;
+      border-top: 5px solid var(--inc-gray-3);
       grid-area: 4 / 3 / 6 / 6;
       overflow-x: auto;
       overflow-y: hidden;
     }
 
     @media (max-width: 1330px) {
-      border-bottom: 5px solid $inc-gray-3;
+      border-bottom: 5px solid var(--inc-gray-3);
       grid-area: 3 / 1 / 4 / 6;
     }
 
     @media(prefers-color-scheme: dark) {
-      border-color: $inc-gray-7;
+      border-color: var(--inc-gray-7);
     }
-  }
-
-  h2 {
-    font-weight: 800;
-    margin-bottom: 1rem;
   }
 
   ul {
     column-gap: 3rem;
-    column-rule: 1px solid $inc-gray-3;
+    column-rule: 1px solid var(--inc-gray-3);
     column-width: 350px;
-    font-size: 1rem;
-    line-height: 1.55;
-    list-style-type: circle;
-    padding-left: 0.25rem;
-    width: 100%;
 
     @media (min-width: 1331px) {
       column-fill: auto;
-      height: calc(100% - 0.5rem);
-      padding-bottom: 2rem;
     }
 
     @media(prefers-color-scheme: dark) {
-      column-rule: 1px solid $inc-gray-7;
-    }
-
-    li:hover {
-      list-style-type: disc;
+      column-rule: 1px solid var(--inc-gray-7);
     }
   }
 </style>
@@ -63,7 +42,7 @@
   <ul>
     <li>
       {@html createLink({
-        destination: "https://github.com/NetOperatorWibby/config-eslint",
+        destination: "https://github.com/NetOpWibby/config-eslint",
         title: "Repo for @webb/config-eslint",
         wrappedText: "@webb/config-eslint"
       })}
@@ -75,7 +54,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://github.com/NetOperatorWibby/config-prettier",
+        destination: "https://github.com/NetOpWibby/config-prettier",
         title: "Repo for @webb/config-prettier",
         wrappedText: "@webb/config-prettier"
       })}
@@ -87,7 +66,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://github.com/NetOperatorWibby/config-stylelint",
+        destination: "https://github.com/NetOpWibby/config-stylelint",
         title: "Repo for @webb/config-stylelint",
         wrappedText: "@webb/config-stylelint"
       })}
@@ -99,7 +78,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://github.com/NetOperatorWibby/console",
+        destination: "https://github.com/NetOpWibby/console",
         title: "Repo for @webb/console",
         wrappedText: "@webb/console"
       })}
@@ -111,7 +90,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://github.com/NetOperatorWibby/ensure-database",
+        destination: "https://github.com/NetOpWibby/ensure-database",
         title: "Repo for @webb/ensure-database",
         wrappedText: "@webb/ensure-database"
       })}
@@ -123,7 +102,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://github.com/NetOperatorWibby/ensure-table",
+        destination: "https://github.com/NetOpWibby/ensure-table",
         title: "Repo for @webb/ensure-table",
         wrappedText: "@webb/ensure-table"
       })}
@@ -135,7 +114,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://github.com/NetOperatorWibby/order-object",
+        destination: "https://github.com/NetOpWibby/order-object",
         title: "Repo for @webb/order-object",
         wrappedText: "@webb/order-object"
       })}
@@ -147,7 +126,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://github.com/NetOperatorWibby/stringify-object",
+        destination: "https://github.com/NetOpWibby/stringify-object",
         title: "Repo for @webb/stringify-object",
         wrappedText: "@webb/stringify-object"
       })}
@@ -159,7 +138,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://github.com/NetOperatorWibby/test",
+        destination: "https://github.com/NetOpWibby/test",
         title: "Repo for @webb/test",
         wrappedText: "@webb/test"
       })}
@@ -172,7 +151,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://github.com/NetOperatorWibby/validate-email",
+        destination: "https://github.com/NetOpWibby/validate-email",
         title: "Repo for @webb/validate-email",
         wrappedText: "@webb/validate-email"
       })}
@@ -184,7 +163,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://github.com/NetOperatorWibby/blog",
+        destination: "https://github.com/NetOpWibby/blog",
         title: "Repo for my blog",
         wrappedText: "Blog"
       })}
@@ -196,7 +175,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://github.com/NetOperatorWibby/homepage",
+        destination: "https://github.com/NetOpWibby/homepage",
         title: "Repo for my homepage",
         wrappedText: "Homepage"
       })}
@@ -256,7 +235,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://github.com/NetOperatorWibby/sveltiest",
+        destination: "https://github.com/NetOpWibby/sveltiest",
         title: "Repo for Sveltiest",
         wrappedText: "Sveltiest"
       })}
@@ -268,7 +247,7 @@
 
     <li>
       {@html createLink({
-        destination: "https://github.com/NetOperatorWibby/vne",
+        destination: "https://github.com/NetOpWibby/vne",
         title: "Repo for vne",
         wrappedText: "vne"
       })}

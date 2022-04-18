@@ -1,48 +1,21 @@
-<script>
+<script lang="ts">
   import { createLink } from "~util";
 </script>
 
-<style type="text/scss">
-  @import "@inc/uchu/src/scss/components/variables";
-  @import "@inc/uchu/src/scss/components/mixins";
-
+<style lang="scss">
   section {
-    padding: 1.75rem 1.5rem;
-
     @media (min-width: 1331px) {
-      border-right: 5px solid $inc-gray-3;
+      border-right: 5px solid var(--inc-gray-3);
       grid-area: 3 / 1 / 6 / 3;
     }
 
     @media (max-width: 1330px) {
-      border-bottom: 5px solid $inc-gray-3;
+      border-bottom: 5px solid var(--inc-gray-3);
       grid-area: 2 / 1 / 3 / 6;
     }
 
     @media(prefers-color-scheme: dark) {
-      border-color: $inc-gray-7;
-    }
-  }
-
-  h2 {
-    font-weight: 800;
-    margin-bottom: 1rem;
-  }
-
-  ul {
-    font-size: 1rem;
-    line-height: 1.55;
-    list-style-type: circle;
-    padding-left: 0.25rem;
-    width: 100%;
-
-    @media (min-width: 1331px) {
-      height: calc(100% - 0.5rem);
-      padding-bottom: 2rem;
-    }
-
-    li:hover {
-      list-style-type: disc;
+      border-color: var(--inc-gray-7);
     }
   }
 </style>
@@ -51,6 +24,7 @@
   <h2>Webbsites &middot; Experiences I've built</h2>
 
   <ul>
+    <!--/
     <li>
       {@html createLink({
         destination: "https://beachfront.digital",
@@ -62,7 +36,9 @@
 
       Domain name portfolio management. Kinda abandoned but still works.
     </li>
+    /-->
 
+    <!--/
     <li>
       {@html createLink({
         destination: "https://chew.sh",
@@ -74,6 +50,7 @@
 
       Server-side analytics because we all use blockers.
     </li>
+    /-->
 
     <li>
       {@html createLink({
@@ -96,7 +73,7 @@
 
       &middot;
 
-      A design agency I made with Jesse Youngblood. Give us money and you'll be happy.
+      A design agency I made with Jesse Youngblood. Give us money.
     </li>
 
     <li>

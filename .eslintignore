@@ -1,6 +1,0 @@
-# Folders
-__sapper__
-src/node_modules/*
-
-# Files
-*.svelte

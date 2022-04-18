@@ -1,45 +1,38 @@
-# homepage
+# create-svelte
 
-> Source code for the coolest homepage with the coolest domain name, **webb.page**.
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
+## Creating a project
 
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Prerequisites
+```bash
+# create a new project in the current directory
+npm init svelte@next
 
-- Node 13
-
-
-
-## Installation
-
-```sh
-$ npm i
+# create a new project in my-app
+npm init svelte@next my-app
 ```
 
+> Note: the `@next` is temporary
 
+## Developing
 
-## Development
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-```sh
-$ npm run watch
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
+## Building
 
+Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
 
-## Production
-
-```sh
-$ npm start
+```bash
+npm run build
 ```
 
-
-
-## Tests
-
-When Sapper supports TypeScript, proper tests will follow. Right now, there are only tests for syntax.
-
-
-
-## Notes
-
-`@inc/uchu` is a private dependency hosted on a private npm-esque instance, so building my homepage locally will not be seamless for you. It might become publicly available...someday.
+> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.

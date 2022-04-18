@@ -1,8 +1,7 @@
-"use strict";
 
 
 
-//  U T I L S
+///  U T I L
 
 import createLink from "./create-link";
 import ownership from "./ownership";
@@ -11,7 +10,7 @@ import replaceDashesWithDots from "./dash-replace";
 
 
 
-//  E X P O R T S
+///  E X P O R T
 
 export {
   createLink,

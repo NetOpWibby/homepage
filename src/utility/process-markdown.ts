@@ -1,8 +1,7 @@
-"use strict";
 
 
 
-//  E X P O R T
+///  E X P O R T
 
 export default markdown => {
   const _match = /---\n([\s\S]+?)\n---/.exec(markdown);
@@ -25,7 +24,7 @@ export default markdown => {
 
       // Check for boolean values
       if (trimmedValue === "true" || trimmedValue === "false")
-        trimmedValue = Boolean(trimmedValue);
+        (trimmedValue as unknown) = Boolean(trimmedValue);
 
       metadata[pair.slice(0, colonIndex).trim()] = trimmedValue;
     }
@@ -40,7 +39,7 @@ export default markdown => {
 
 
 
-//  H E L P E R
+///  H E L P E R
 
 function stripMarkdown(markdown) {
   return markdown

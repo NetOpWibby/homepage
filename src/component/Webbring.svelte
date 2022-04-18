@@ -1,14 +1,9 @@
-<script>
+<script lang="ts">
   import { createLink } from "~util";
 </script>
 
-<style type="text/scss">
-  @import "@inc/uchu/src/scss/components/variables";
-  @import "@inc/uchu/src/scss/components/mixins";
-
+<style lang="scss">
   section {
-    padding: 1.75rem 1.5rem;
-
     @media (min-width: 1331px) {
       grid-area: 1 / 4 / 4 / 6;
       overflow-x: auto;
@@ -20,37 +15,21 @@
     }
 
     @media(prefers-color-scheme: dark) {
-      border-color: $inc-gray-7;
+      border-color: var(--inc-gray-7);
     }
-  }
-
-  h2 {
-    font-weight: 800;
-    margin-bottom: 1rem;
   }
 
   ul {
     column-gap: 3rem;
-    column-rule: 1px solid $inc-gray-3;
+    column-rule: 1px solid var(--inc-gray-3);
     column-width: 150px;
-    font-size: 1rem;
-    line-height: 1.55;
-    list-style-type: circle;
-    padding-left: 0.25rem;
-    width: 100%;
 
     @media (min-width: 1331px) {
       column-fill: auto;
-      height: calc(100% - 0.5rem);
-      padding-bottom: 2rem;
     }
 
     @media(prefers-color-scheme: dark) {
-      column-rule: 1px solid $inc-gray-7;
-    }
-
-    li:hover {
-      list-style-type: disc;
+      column-rule: 1px solid var(--inc-gray-7);
     }
   }
 </style>

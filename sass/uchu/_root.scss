@@ -1,0 +1,37 @@
+:root {
+  --background-color: var(--inc-white);
+  --base-grid-color1: rgba(var(--inc-teal-3-rgb), 0.3);
+  --base-grid-color2: rgba(var(--inc-violet-3-rgb), 0.3);
+  --baseline: calc(var(--line-height) / 2);
+  --block-spacing-bottom: var(--line-height);
+  --block-spacing-top: 0;
+  --column-gap: calc(var(--line-height) * 2);
+  --display-scale: 1;
+  --font-size: 12px;
+  --foreground-color: rgba(var(--foreground-color-rgb), var(--foreground-color-a));
+  --foreground-color-a: 1;
+  --foreground-color-rgb: 0, 0, 0;
+  --h1-size: 2.8rem;
+  --h2-size: 2.2rem;
+  --h3-size: 1.4rem;
+  --h4-size: 1.1rem;
+  --hr-thickness: 2px;
+  --line-height: calc(var(--font-size) * 1.5);
+  --pixel: 1px;
+  --row-gap: var(--line-height);
+
+  @media only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+    --display-scale: 2;
+    --pixel: 0.5px;
+  }
+
+  @media only screen and (min-device-pixel-ratio: 2.5), only screen and (min-resolution: 2.5dppx) {
+    --display-scale: 3;
+    --pixel: 0.34px;
+  }
+
+  @media only screen and (min-device-pixel-ratio: 3.5), only screen and (min-resolution: 3.5dppx) {
+    --display-scale: 4;
+    --pixel: 0.25px;
+  }
+}

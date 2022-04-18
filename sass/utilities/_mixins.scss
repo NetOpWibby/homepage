@@ -1,0 +1,118 @@
+@mixin center {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+}
+
+@mixin clearfix {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/// Smart font include
+/// Simply pass in the font-weight you want to use and the normal/italicized versions will be added
+/// No more weighing down the front-end with references to unused weights
+@mixin font-face($font-weight, $relative-font-path, $font-name) {
+  @font-face {
+    font-family: $font-name;
+    font-style: normal;
+    font-weight: $font-weight;
+    src: url("#{$relative-font-path}/#{$font-weight}.woff2") format("woff2");
+  }
+}
+
+@mixin font-face-with-italics($font-weight, $relative-font-path, $font-name) {
+  @font-face {
+    font-family: $font-name;
+    font-style: normal;
+    font-weight: $font-weight;
+    src: url("#{$relative-font-path}/#{$font-weight}.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: $font-name;
+    font-style: italic;
+    font-weight: $font-weight;
+    src: url("#{$relative-font-path}/#{$font-weight}i.woff2") format("woff2");
+  }
+}
+
+@mixin hide-text {
+  border: none;
+  color: transparent;
+  font: 0 / 0 a;
+  text-shadow: none;
+}
+
+/// Cross-browser line-clamp support
+@mixin line-clamp(
+  $element-height: 2rem,
+  $row-count: 2,
+  $fade-color: var(--inc-white),
+  $computed-position: relative
+) {
+  height: $element-height;
+  overflow: hidden;
+  position: $computed-position;
+
+  &::after {
+    width: 50%; height: calc(#{$element-height} / #{$row-count});
+    right: 0; bottom: 0;
+
+    background-image: linear-gradient(to right, rgba(var(--inc-white-rgb), 0), #{$fade-color} 80%);
+    content: "";
+    position: absolute;
+  }
+}
+
+@mixin no-user-select {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+/// Use CSS variables without upsetting Sass-Lint
+/// https://github.com/sasstools/sass-lint/issues/1161#issuecomment-390537190
+@mixin root-prop($prop: null, $value: null) {
+  @if ($prop and $value) {
+    #{$prop}: $value;
+  }
+}
+
+@mixin selection($background-color: var(--inc-white), $text-color: var(--inc-gray-9)) {
+  &::selection {
+    background-color: $background-color;
+    color: $text-color;
+    text-shadow: none;
+  }
+
+  &::-moz-selection {
+    background-color: $background-color;
+    color: $text-color;
+    text-shadow: none;
+  }
+}
+
+@mixin underline($text-color: var(--inc-gray-9), $inc-whitespace-color: var(--inc-white)) {
+  @include selection($text-color, $inc-whitespace-color);
+
+  background-image: linear-gradient($inc-whitespace-color, $inc-whitespace-color), linear-gradient($inc-whitespace-color, $inc-whitespace-color), linear-gradient($text-color, $text-color);
+  background-position: 0 88%, 100% 88%, 0 88%;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-size: 0.05rem 1px, 0.05rem 1px, 1px 1px;
+  box-decoration-break: clone;
+  display: inline;
+  text-decoration: none;
+  text-shadow: 0.03rem 0 $inc-whitespace-color, -0.03rem 0 $inc-whitespace-color, 0 0.03rem $inc-whitespace-color, 0 -0.03rem $inc-whitespace-color, 0.06rem 0 $inc-whitespace-color, -0.06rem 0 $inc-whitespace-color, 0.09rem 0 $inc-whitespace-color, -0.09rem 0 $inc-whitespace-color, 0.12rem 0 $inc-whitespace-color, -0.12rem 0 $inc-whitespace-color, 0.15rem 0 $inc-whitespace-color, -0.15rem 0 $inc-whitespace-color;
+
+  @-moz-document url-prefix() { // sass-lint:disable-line empty-args
+    background-position: 0 90%, 100% 90%, 0 90%;
+  }
+}

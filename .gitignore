@@ -1,12 +1,14 @@
-# Files
-*.css
-*.map
+# OS garbage
 .DS_Store
-yarn-error.log
 Thumbs.db
 
+# Files
+*.css.map
+*.lock
+*.log
+.env
+
 # Folders
-__sapper__
-cypress/screenshots
+.svelte-kit
+build
 node_modules
-src/node_modules/*

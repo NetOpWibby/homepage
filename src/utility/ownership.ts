@@ -1,8 +1,7 @@
-"use strict";
 
 
 
-//  E X P O R T
+///  E X P O R T
 
 export default providedString => {
   const normalizedString = providedString.toLowerCase();

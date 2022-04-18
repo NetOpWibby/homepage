@@ -1,86 +1,54 @@
 {
-  "_moduleAliases": {
-    "~component": "src/components",
-    "~root": ".",
-    "~util": "src/utils"
-  },
   "author": {
     "name": "netop://ウエハ",
-    "url": "https://webb.page"
+    "url": "https://inc.sh"
   },
   "dependencies": {
-    "compression": "^1.7.4",
-    "marked": "^1.1.0",
-    "natural-orderby": "^2.0.3",
-    "polka": "next",
-    "sirv": "^1.0.1"
+    "dedent": "^0.7.0"
   },
-  "description": "Homepage for netop:// ウエハ",
   "devDependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/runtime": "^7.10.4",
-    "@inc/uchu": "^2019.12.1",
-    "@webb/config-eslint": "^2020.4.16",
-    "@webb/config-stylelint": "^2020.4.16",
-    "chronver": "^2020.6.18",
-    "dedent": "^0.7.0",
-    "del-cli": "^3.0.1",
-    "eslint": "^7.4.0",
-    "husky": "^4.2.5",
-    "link-module-alias": "^1.2.0",
+    "@sveltejs/adapter-node": "^1.0.0-next.73",
+    "@sveltejs/kit": "next",
+    "@tsconfig/svelte": "^3.0.0",
+    "@webb/config-nyc": "*",
+    "@webb/test": "*",
+    "chronver": "*",
+    "del-cli": "^4.0.1",
+    "husky": "^7.0.4",
     "npm-run-all": "^4.1.5",
-    "rollup": "^2.21.0",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-replace": "^2.2.0",
-    "rollup-plugin-svelte": "^5.2.3",
-    "rollup-plugin-terser": "^6.1.0",
-    "sapper": "^0.27.16",
-    "sass": "^1.26.10",
-    "snazzy": "^8.0.0",
-    "standardx": "^5.0.0",
-    "stylelint": "^13.6.1",
-    "stylelint-order": "^4.1.0",
-    "svelte": "^3.24.0",
-    "svelte-preprocess": "^4.0.6",
-    "updates": "^10.2.15"
+    "prettier": "^2.6.2",
+    "prettier-plugin-svelte": "^2.7.0",
+    "sass": "^1.50.0",
+    "sass-lint": "^1.13.1",
+    "stylelint": "^14.7.1",
+    "stylelint-order": "^5.0.0",
+    "svelte": "^3.47.0",
+    "svelte-check": "^2.7.0",
+    "svelte-preprocess": "^4.10.6",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.3",
+    "updates": "^13.0.5"
   },
   "engines": {
-    "node": ">=13.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run format && npm run test:sass && npm run increment && git add -A :/"
-    }
+    "node": ">=16.0.0"
   },
   "name": "homepage",
   "private": true,
   "scripts": {
-    "build": "sapper build --legacy",
-    "compress": "sass --load-path=node_modules --update sass:static --style compressed",
-    "export": "sapper export --legacy",
-    "format": "eslint . --fix",
+    "build": "npm run clean;npm run render;svelte-kit build",
+    "clean": "del './build'",
     "increment": "chronver --increment package",
-    "postinstall": "link-module-alias",
-    "preinstall": "command -v link-module-alias;link-module-alias clean || true",
-    "start": "del './__sapper__';npm i;npm run build;npm run compress;NODE_ENV=production PORT=6433 node __sapper__/build",
+    "pre-commit": "npm run build && npm run increment && git add -A :/",
+    "render": "sass sass/uchu:static --style compressed",
+    "start": "npm i;npm run build;PORT=6433 SETTINGS=production node build/index.js",
     "test": "run-s test:*",
     "test:dependencies": "updates --update ./",
-    "test:lint": "standardx --verbose | snazzy",
-    "test:sass": "stylelint 'sass/*/**.scss'",
-    "watch": "NODE_ENV=development PORT=6433 run-p watch:*",
-    "watch:app": "sapper dev",
-    "watch:sass": "sass --load-path=node_modules --watch sass:static --style compressed"
+    "test:svelte": "svelte-check",
+    "test:typescript": "tsc --noEmit",
+    "watch": "npm run render && run-p watch:*",
+    "watch:develop": "SETTINGS=development svelte-kit dev --port 6433 --open",
+    "watch:sass": "sass --watch sass/uchu:static --style compressed"
   },
-  "standardx": {
-    "ignore": [
-      "__sapper__",
-      "static"
-    ]
-  },
-  "version": "2020.07.08"
+  "type": "module",
+  "version": "2022.04.18"
 }
