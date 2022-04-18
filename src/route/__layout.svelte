@@ -439,6 +439,7 @@
     font-weight: 600;
     text-decoration: none;
     transition: color 0.2s;
+    white-space: pre-line;
 
     &:hover {
       color: #6667ab; // Pantone 2022 Color of the Year
