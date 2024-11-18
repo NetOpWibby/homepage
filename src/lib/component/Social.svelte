@@ -14,7 +14,10 @@
   //// function
   async function mastodon() {
     const response = await fetch("/api/mastodon.json", {
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
       method: "POST"
     });
 

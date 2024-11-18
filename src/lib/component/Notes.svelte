@@ -51,7 +51,10 @@
       try {
         const response = await fetch("/api/notes.json", {
           body: JSON.stringify({ filename: slug }),
-          headers: { "Content-Type": "text/plain" },
+          headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          },
           method: "POST"
         });
 
