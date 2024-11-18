@@ -49,7 +49,7 @@
       selectedNote = slug;
 
       try {
-        const response = await fetch("http://localhost:6433/api/notes.json", {
+        const response = await fetch("/api/notes.json", {
           body: JSON.stringify({ filename: slug }),
           headers: { "Content-Type": "text/plain" },
           method: "POST"

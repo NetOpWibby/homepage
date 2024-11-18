@@ -4,7 +4,6 @@
     "url": "https://webb.page"
   },
   "dependencies": {
-    "cross-fetch": "^4.0.0",
     "marked": "^15.0.0",
     "plyr": "^3.7.8",
     "timeago.js": "^4.0.2"
@@ -43,7 +42,7 @@
     "prepare": "husky",
     "preview": "vite preview",
     "render": "sass sass/uchu:static --style compressed",
-    "start": "bun i && bun run build && PORT=6433 SETTINGS=production bun build/index.js",
+    "start": "bun i && bun run build && PORT=6433 SETTINGS=production bun ./build/index.js",
     "test": "run-s test:*",
     "test:dependencies": "updates --update ./",
     "test:svelte": "svelte-check",
@@ -53,5 +52,5 @@
     "watch:sass": "sass --watch sass/uchu:static --style compressed"
   },
   "type": "module",
-  "version": "2024.11.17"
+  "version": "2024.11.18"
 }

@@ -102,7 +102,7 @@
       selectedPost = slug;
 
       try {
-        const response = await fetch("http://localhost:6433/api/blog.json", {
+        const response = await fetch("/api/blog.json", {
           body: JSON.stringify({ filename: slug }),
           headers: { "Content-Type": "text/plain" },
           method: "POST"

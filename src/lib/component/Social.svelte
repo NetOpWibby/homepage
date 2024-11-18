@@ -1,7 +1,7 @@
 <script lang="ts">
   //// import
-  import fetch from "cross-fetch";
   import { format as formatDate } from "timeago.js";
+  import { onMount } from "svelte";
 
   //// var
   const videoRegex = /\.(mp4|mov|avi|wmv|flv|mkv|webm|m4v)$/i;
@@ -13,7 +13,7 @@
 
   //// function
   async function mastodon() {
-    const response = await fetch("http://localhost:6433/api/mastodon.json", {
+    const response = await fetch("/api/mastodon.json", {
       headers: { "Content-Type": "application/json" },
       method: "POST"
     });
@@ -27,7 +27,10 @@
     mastodonLoaded = true;
   }
 
-  mastodon();
+  //// ready
+  onMount(() => {
+    mastodon();
+  });
 </script>
 
 <style lang="scss">
