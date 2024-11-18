@@ -1,0 +1,16 @@
+/* TEAM */
+
+Paul Anthony Webb - Architech
+
+
+
+/* THANKS */
+
+Viewers like you
+
+
+
+/* SITE */
+
+Standards: CSS3, HTML5, ES6/7/whatever
+Components: SvelteKit, Sass, TypeScript

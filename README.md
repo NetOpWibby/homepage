@@ -1,19 +1,13 @@
 # homepage
 
-> Source code for the coolest homepage with the coolest domain name, **webb.page**.
-
-
-
-## Prerequisites
-
-- Node 16
+> source for the coolest homepage with the coolest domain name, **webb.page**.
 
 
 
 ## Installation
 
 ```sh
-$ npm i
+bun i
 ```
 
 
@@ -21,13 +15,18 @@ $ npm i
 ## Development
 
 ```sh
-$ npm run watch
+# initialize husky
+bun run prepare
 ```
+
+```sh
+bun run watch
+````
 
 
 
 ## Production
 
 ```sh
-$ npm start
+bun start
 ```

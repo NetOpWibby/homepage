@@ -1,14 +1,23 @@
-# OS garbage
+node_modules
+
+# Output
+.output
+.vercel
+/.svelte-kit
+/build
+
+# OS
 .DS_Store
+*.lockb
+*.lockdb
 Thumbs.db
 
-# Files
-*.css.map
-*.lock
-*.log
+# Env
 .env
+.env.*
+!.env.example
+!.env.test
 
-# Folders
-.svelte-kit
-build
-node_modules
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

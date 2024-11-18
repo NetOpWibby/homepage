@@ -1,6 +1,0 @@
-{
-  extends: "@webb/config-stylelint",
-  plugins: [
-    "stylelint-order"
-  ]
-}

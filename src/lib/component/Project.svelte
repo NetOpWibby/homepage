@@ -1,0 +1,197 @@
+<script lang="ts">
+  //// var
+  const videoRegex = /\.(mp4|mov|avi|wmv|flv|mkv|webm|m4v)$/i;
+
+  const projects = [
+    {
+      content: "<p>This project was a proof-of-concept utilizing node-webkit (circa 2013) to see if it was possible to create a web browser.</p><p>Performance wasn't great but damn it looks good.</p>",
+      id: "001",
+      media: [
+        "/images/projects/aries_01.jpg",
+        "/images/projects/aries_02.jpg"
+      ],
+      tagline: "web browser",
+      title: "Aries"
+    },
+    {
+      content: `<p>This registrar was built upon the Handshake blockchain to sell domain names and provide hosting. I poured everything I've ever wanted in a registrar into this.</p><p>I've stopped working on it due to <a href="https://blog.neuenet.com/post/devlog-014" target="_blank">happenings I didn't agree with</a> happening in the Handshake community. I will come back to beachfront/ when I feel things are better or I fork Handshake.</p>`,
+      id: "002",
+      media: [
+        "/images/projects/beachfront_01.jpg",
+        "/images/projects/beachfront_02.jpg"
+      ],
+      tagline: "next-generation registrar",
+      title: "beachfront/"
+    },
+    {
+      content: "<p>In 2014 I had the idea for a &ldquo;responsive operating system&rdquo; that could run on any device from a Raspberry Pi to a desktop PC.</p><p>There's no reason why a neat OS GUI shouldn't look as good as anime interfaces.</p>",
+      id: "003",
+      media: [
+        "/images/projects/hikari_01.mp4"
+      ],
+      tagline: "responsive operating system",
+      title: "hikari"
+    },
+    {
+      content: `<p>This registry was built upon the Handshake blockchain to provide infrastructure for my TLDs. I wrote a nameserver in Deno, created a DNSSEC tool to secure said TLDs, and so on. I built and blogged a <strong>lot</strong> about my vision for the internet and freely gave away ideas and a roadmap for others to adopt.</p><p>I've stopped working on it due to <a href="https://blog.neuenet.com/post/devlog-014" target="_blank">happenings I didn't agree with</a> happening in the Handshake community. I will come back to beachfront/ when I feel things are better or I fork Handshake.</p>`,
+      id: "004",
+      media: [
+        "/images/projects/neuenet_01.jpg",
+        "/images/projects/neuenet_02.jpg"
+      ],
+      tagline: "registry for the Neue Internet",
+      title: "Neuenet"
+    },
+    {
+      content: "<p>There's no point in competing with Google, they've got a 20 year headstart&hellip;but what if you could just ask someone who's knowledgeable af? You do realize Google only has data because of us. Right?</p><p>Anyhoo, there's a lot of parts to make this work and I'm busy with socii at the moment.</p>",
+      id: "005",
+      media: [],
+      tagline: "P2P search",
+      title: "queree"
+    },
+    {
+      content: `<p>Around 2017 or so I had the idea of a new kind of social network that brought back the great parts of Myspace while empowering people with comprehensive customization, data, and moderation tools. Bluesky does an excellent job with the latter but being VC-backed means it's only a matter of time before enshittification.</p><p>I gave myself a deadline of 2025.01.01 to launch but we'll see. Sign up for updates <a href="https://socii.network" target="_blank">on socii.network</a>.</p>`,
+      id: "006",
+      media: [
+        "/images/projects/socii_01.jpg"
+      ],
+      tagline: "the social network",
+      title: "socii"
+    }
+  ];
+
+  let activeProject = "006";
+</script>
+
+<style lang="scss">
+  h2, ul {
+    line-height: 1;
+  }
+
+  h2 {
+    margin: 0 0 calc(var(--padding) * 2); padding: var(--padding) calc(var(--padding) * 2);
+
+    background-color: var(--color-border);
+    color: var(--inc-yin-7);
+    font-size: 1rem;
+    line-height: inherit;
+  }
+
+  ul {
+    margin-left: calc(var(--list-indentation) / 2);
+    padding: 0 var(--list-indentation) calc(var(--list-indentation) * 4) 0;
+
+    li {
+      margin: 0; padding: 0 0 var(--baseline) calc(var(--baseline) * 2);
+      position: relative;
+
+      &::before,
+      &::after {
+        background-color: var(--color-border);
+        content: "";
+        left: 0;
+        position: absolute;
+      }
+
+      &::before {
+        width: calc(var(--list-indentation) / 2); height: 1px;
+        top: calc(var(--list-indentation) / 4);
+      }
+
+      &::after {
+        width: 1px; height: var(--list-indentation);
+        top: calc(var(--list-indentation) * -0.75);
+      }
+
+      button {
+        cursor: pointer;
+        position: relative;
+
+        &.active {
+          padding-left: calc(var(--baseline) * 2);
+
+          &::before {
+            width: calc(var(--list-indentation) * 1.25); height: 1px;
+            top: 50%; left: calc(calc(var(--baseline) * 2) * -1);
+
+            background-color: var(--color-border);
+            content: "";
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+
+  .player {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &::before {
+      width: 1px; height: calc(100% + 0.75rem);
+      top: -0.75rem; left: calc(var(--list-indentation) * -0.75);
+
+      background-color: var(--color-border);
+      content: "";
+      position: absolute;
+    }
+  }
+
+  :global(p) {
+    line-height: var(--line-height);
+    margin-bottom: 0;
+    padding-top: calc(var(--padding) * 2);
+    text-align: left;
+    white-space: normal;
+    width: 100%;
+
+    :global(a) {
+      text-decoration: underline var(--inc-yin-2);
+    }
+  }
+
+  figure {
+    margin-bottom: 0;
+  }
+
+  video {
+    padding-top: calc(var(--padding) * 2);
+    width: 100%;
+  }
+</style>
+
+<h2>projects.webb.page</h2>
+
+<ul>
+  {#each projects as project (project.id)}
+    <li>
+      <button
+        class:active={activeProject === project.id}
+        on:click={() => activeProject === project.id ? activeProject = "" : activeProject = project.id}>{project.title} &middot; {project.tagline}</button>
+
+      {#if activeProject === project.id}
+        <div class="player">
+          {@html project.content}
+
+          {#each project.media as mediaItem}
+            {#if videoRegex.test(mediaItem)}
+              <figure>
+                <!-- svelte-ignore a11y-media-has-caption -->
+                <video controls>
+                  <source src={mediaItem}/>
+                </video>
+              </figure>
+            {:else}
+              <figure>
+                <img alt="" src={mediaItem}/>
+                <figcaption></figcaption>
+              </figure>
+            {/if}
+          {/each}
+        </div>
+      {/if}
+    </li>
+  {/each}
+</ul>

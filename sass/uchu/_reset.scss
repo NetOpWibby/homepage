@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   font: inherit;
   line-height: inherit;
 
@@ -33,21 +34,13 @@ address, article, aside, blockquote, dd, dl, dt, fieldset, figure, form, h1, h2,
 a {
   color: inherit;
   cursor: pointer;
-  text-decoration: underline rgba(var(--inc-black-rgb), 0.3);
+  text-decoration: underline oklch(var(--inc-yin-raw) / 30%);
+  transition: all 0.2s;
   white-space: nowrap;
-  -webkit-text-decoration: underline rgba(var(--inc-black-rgb), 0.3); // safari needs a hand
-
-  @media(prefers-color-scheme: dark) {
-    text-decoration: underline rgba(var(--inc-white-rgb), 0.3);
-    -webkit-text-decoration: underline rgba(var(--inc-white-rgb), 0.3); // safari needs a hand
-  }
+  -webkit-text-decoration: underline oklch(var(--inc-yin-raw) / 30%); /// safari needs a hand
 
   &:hover {
     color: var(--inc-blue-4);
-
-    @media(prefers-color-scheme: dark) {
-      color: var(--inc-cyan-4);
-    }
   }
 }
 
@@ -68,10 +61,18 @@ blockquote, q {
   }
 }
 
+button {
+  margin: 0; padding: 0;
+
+  appearance: none;
+  background-color: transparent;
+  border: none;
+}
+
 html {
   background-color: var(--background-color);
   color: var(--foreground-color);
-  font-family: var(--sans-font), -system-ui, system-ui, sans-serif;
+  font-family: var(--font-sans), -system-ui, system-ui, sans-serif;
   font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "cv10" 1;
   font-size: var(--font-size);
   font-variant-ligatures: contextual common-ligatures;
@@ -101,11 +102,6 @@ hr {
   margin-top: calc(var(--line-height) - var(--hr-thickness) / 2);
   margin-bottom: calc(var(--line-height) - var(--hr-thickness) / 2);
   opacity: 0.05;
-
-  @media(prefers-color-scheme: dark) {
-    background-color: var(--inc-gray-8);
-    opacity: 1;
-  }
 
   &:not(:first-child) {
     margin-top: var(--line-height);
@@ -283,11 +279,9 @@ h6 > a {
 
   &:hover {
     color: inherit;
-    text-decoration: underline rgba(0, 0, 0, 0.3);
+    text-decoration: underline oklch(var(--inc-yin-raw) / 30%);
   }
 }
-
-
 
 img {
   display: block;
@@ -342,8 +336,15 @@ img {
 input,
 select {
   appearance: none;
+  border: none;
+  letter-spacing: -0.01rem; /// to match html rule
+
   -moz-appearance: none;
   -webkit-appearance: none;
+
+  &:focus-visible {
+    outline: 2px solid var(--inc-blue-4);
+  }
 }
 
 ol,
@@ -424,7 +425,7 @@ li {
         position: absolute;
         width: 1.1rem;
 
-        @supports ((mask-image: linear-gradient(rgba(var(--inc-black-rgb), 1), red))) {
+        @supports ((mask-image: linear-gradient(var(--inc-yin), red))) {
           mask-position: center center;
           mask-repeat: no-repeat;
           mask-size: contain;
@@ -434,7 +435,7 @@ li {
       &::after {
         background-image: var(--outline-svg-url);
 
-        @supports ((mask-image: linear-gradient(rgba(var(--inc-black-rgb), 1), red))) {
+        @supports ((mask-image: linear-gradient(var(--inc-yin), red))) {
           background-color: var(--foreground-color);
           mask-image: var(--outline-svg-url);
         }
@@ -443,7 +444,7 @@ li {
       &[checked]::before {
         background-image: var(--check-svg-url);
 
-        @supports ((mask-image: linear-gradient(rgba(var(--inc-black-rgb), 1), red))) {
+        @supports ((mask-image: linear-gradient(var(--inc-yin), red))) {
           background-color: var(--foreground-color);
           mask-image: var(--check-svg-url);
         }
@@ -456,10 +457,6 @@ table {
   --border-opacity: 0.15;
   --border-color: rgba(var(--foreground-color-rgb), calc(var(--foreground-color-a) * var(--border-opacity)));
   --border-width: 1px;
-
-  @media(prefers-color-scheme: dark) {
-    --border-color: var(--inc-gray-8);
-  }
 
   border-collapse: collapse;
   border-right: var(--border-width) solid var(--border-color);
@@ -497,6 +494,7 @@ table {
       height: var(--border-width);
       pointer-events: none;
       position: absolute;
+      z-index: 1;
     }
   }
 
@@ -526,23 +524,6 @@ p + table {
     display: none;
   }
 }
-
-// h {
-//   @extends h1;
-//   appearance: none;
-//   display: block;
-// }
-
-// .bold { @extends b; }
-// .italic { @extends i; }
-// .code { @extends code; }
-// .monospace { @extends code; }
-// .h1 { @extends h1; }
-// .h2 { @extends h2; }
-// .h3 { @extends h3; }
-// .h4 { @extends h4; }
-// .h5 { @extends h5; }
-// .h6 { @extends h6; }
 
 .compact {
   > li > p + ol,

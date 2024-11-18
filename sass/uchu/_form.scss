@@ -13,10 +13,10 @@ fieldset {
       color: var(--inc-gray-2);
       cursor: pointer;
 
-      @media (prefers-color-scheme: dark) {
-        background-color: var(--inc-blue-8);
-        color: var(--inc-gray-1);
-      }
+      // @media (prefers-color-scheme: dark) {
+      //   background-color: var(--inc-blue-8);
+      //   color: var(--inc-gray-1);
+      // }
     }
 
     &:disabled {
@@ -24,10 +24,10 @@ fieldset {
       color: var(--inc-gray-6);
       cursor: not-allowed;
 
-      @media (prefers-color-scheme: dark) {
-        background-color: var(--inc-gray-8);
-        color: var(--inc-gray-5);
-      }
+      // @media (prefers-color-scheme: dark) {
+      //   background-color: var(--inc-gray-8);
+      //   color: var(--inc-gray-5);
+      // }
     }
   }
 
@@ -50,9 +50,9 @@ fieldset {
         transition: none;
       }
 
-      @media (prefers-color-scheme: dark) {
-        background-color: var(--inc-gray-9);
-      }
+      // @media (prefers-color-scheme: dark) {
+      //   background-color: var(--inc-gray-9);
+      // }
 
       &::placeholder {
         color: var(--inc-gray-5);
@@ -62,9 +62,9 @@ fieldset {
       &:not(:focus) {
         border-color: var(--inc-gray-2);
 
-        @media (prefers-color-scheme: dark) {
-          border-color: var(--inc-gray-8);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   border-color: var(--inc-gray-8);
+        // }
       }
 
       &:focus {
@@ -72,9 +72,9 @@ fieldset {
         box-shadow: none;
         outline: none;
 
-        @media (prefers-color-scheme: dark) {
-          border-color: var(--inc-blue-8);
-        }
+        // @media (prefers-color-scheme: dark) {
+        //   border-color: var(--inc-blue-8);
+        // }
       }
     }
 

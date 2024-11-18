@@ -1,0 +1,28 @@
+@use "./uchu/core/mixin" as mixin;
+
+@include mixin.font-plus-italics(400, "/type/sans", "webb sans");
+@include mixin.font-plus-italics(600, "/type/sans", "webb sans");
+
+:root {
+  --color-background: var(--inc-gray-1);
+  --color-border: var(--inc-gray-3);
+  --color-foreground: var(--inc-yin-8);
+  --font-mono: "webb mono";
+  --font-sans: "webb sans";
+  --font-size: 16px;
+  --padding: 0.5rem;
+}
+
+html,
+body {
+  width: 100%; height: 100%;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  font-size: var(--font-size);
+  font-variant-numeric: slashed-zero tabular-nums;
+  padding: var(--line-height) var(--line-height) calc(var(--line-height) * 2);
+}
