@@ -40,6 +40,10 @@
         top: calc(var(--list-indentation) * -0.75);
       }
     }
+
+    a {
+      text-decoration: underline var(--inc-yin-2);
+    }
   }
 </style>
 

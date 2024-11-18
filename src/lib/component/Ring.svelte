@@ -276,6 +276,10 @@
         }
       }
     }
+
+    a {
+      text-decoration: underline var(--inc-yin-2);
+    }
   }
 
   :global(.special-char) {
