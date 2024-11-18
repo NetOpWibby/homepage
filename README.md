@@ -10,13 +10,6 @@
 bun i
 ```
 
-```sh
-# initialize husky
-bunx husky init
-```
-
-Update `.husky/pre-commit` with `bun run increment`.
-
 
 
 ## Development
