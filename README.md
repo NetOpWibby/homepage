@@ -10,14 +10,16 @@
 bun i
 ```
 
+```sh
+# initialize husky
+bunx husky init
+```
+
+Update `.husky/pre-commit` with `bun run increment`.
+
 
 
 ## Development
-
-```sh
-# initialize husky
-bun run prepare
-```
 
 ```sh
 bun run watch
