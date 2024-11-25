@@ -1,6 +1,6 @@
 {
   "author": {
-    "name": "netop://ウエハ",
+    "name": "netop://ウエブ",
     "url": "https://webb.page"
   },
   "dependencies": {
@@ -52,5 +52,5 @@
     "watch:sass": "sass --watch sass/uchu:static --style compressed"
   },
   "type": "module",
-  "version": "2024.11.18.5"
+  "version": "2024.11.24"
 }
