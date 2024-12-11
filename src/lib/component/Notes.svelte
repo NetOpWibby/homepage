@@ -1,6 +1,7 @@
 <script lang="ts">
   //// var
   const notes = [
+    "009-write-human-code.txt",
     "008-use-your-own-domain-bluesky.txt",
     "007-goals-and-systems-quote.txt",
     "006-export-farcaster.txt",
