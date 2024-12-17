@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.1">
+  <head>
+    <docs>https://webb.page</docs>
+    <ownerEmail>paul@webb.page</ownerEmail>
+    <ownerName>Paul Anthony Webb</ownerName>
+    <title>webb.blog.opml</title>
+  </head>
+
+  <body>
+    <outline
+      description=""
+      htmlUrl="https://annamariaperez.com/blog"
+      text="AnnaMaria Perez"
+      title="AnnaMaria Perez"
+      type="rss"
+      version="RSS"
+      xmlUrl="https://annamariaperez.com/blog?format=rss"
+    />
+
+    <outline
+      description=""
+      htmlUrl="https://www.astrodim.com"
+      text="Astro*dim"
+      title="Astro*dim"
+      type="atom"
+      version="Atom"
+      xmlUrl="https://www.astrodim.com/blog-feed.xml"
+    />
+
+    <outline
+      description=""
+      htmlUrl="https://metanorm.mirror.xyz"
+      text="Metanorm"
+      title="Metanorm"
+      type="atom"
+      version="Atom"
+      xmlUrl="https://metanorm.mirror.xyz/feed/atom"
+    />
+
+    <outline
+      description=""
+      htmlUrl="https://micro.corntoole.com"
+      text="Cornelius Toole"
+      title="Cornelius Toole"
+      type="json"
+      version="JSON"
+      xmlUrl="https://micro.corntoole.com/feed.json"
+    />
+
+    <outline
+      description=""
+      htmlUrl="https://ellesho.me/page/website/now"
+      text="elle's homepage"
+      title="elle's homepage"
+      type="rss"
+      version="RSS"
+      xmlUrl="https://ellesho.me/page/rss.xml"
+    />
+
+    <outline
+      description=""
+      htmlUrl="https://mirror.xyz/riotgoools.eth"
+      text="elle on Mirror"
+      title="elle on Mirror"
+      type="atom"
+      version="Atom"
+      xmlUrl="https://mirror.xyz/riotgoools.eth/feed/atom"
+    />
+
+    <outline
+      description=""
+      htmlUrl="https://iheanyi.com/journal"
+      text="Iheanyi Ekechukwu's Journal"
+      title="Iheanyi Ekechukwu's Journal"
+      type="atom"
+      version="Atom"
+      xmlUrl="https://iheanyi.com/feed.xml"
+    />
+
+    <outline
+      description=""
+      htmlUrl="https://jacky.wtf/essays"
+      text="Jacky Alciné's Essays"
+      title="Jacky Alciné's Essays"
+      type="atom"
+      version="Atom"
+      xmlUrl="https://jacky.wtf/essays/feed.atom"
+    />
+
+    <outline
+      description=""
+      htmlUrl="https://blog.jesseyoungblood.com"
+      text="Software, Startups, &amp; Sandwiches"
+      title="Software, Startups, &amp; Sandwiches"
+      type="rss"
+      version="RSS"
+      xmlUrl="https://blog.jesseyoungblood.com/feed"
+    />
+
+    <outline
+      description=""
+      htmlUrl="https://www.brisseaux.com/blog"
+      text="BRISSEAUX"
+      title="BRISSEAUX"
+      type="rss"
+      version="RSS"
+      xmlUrl="https://www.brisseaux.com/blog?format=rss"
+    />
+
+    <outline
+      description=""
+      htmlUrl="https://sincerelyshantelle.com"
+      text="Sincerely, Shantelle"
+      title="Sincerely, Shantelle"
+      type="rss"
+      version="RSS"
+      xmlUrl="https://sincerelyshantelle.com/feed/"
+    />
+  </body>
+</opml>

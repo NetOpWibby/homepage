@@ -126,4 +126,5 @@
   <!-- <a href="https://netopwibby.socii.network" target="_blank">socii@netopwibby</a> -->
   <a href="https://social.coop/@netopwibby" target="_blank">@netopwibby@social.coop</a>
   <a href="https://bsky.app/profile/webb.page" target="_blank">@webb.page</a>
+  <em>scroll vertically to scroll horizontally</em>
 </aside>
