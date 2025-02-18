@@ -13,7 +13,8 @@
     "/images/netopwibby/07.jpg",
     "/images/netopwibby/08.jpg",
     "/images/netopwibby/09.jpg",
-    "/images/netopwibby/10.jpg"
+    "/images/netopwibby/10.jpg",
+    "/images/netopwibby/11.jpg"
   ];
 
   let selfie = "";
@@ -34,16 +35,15 @@
   }
 
   h2 {
-    line-height: 1;
-  }
-
-  h2 {
     margin: 0 0 var(--about-padding); padding: var(--padding) var(--about-padding);
 
     background-color: var(--color-border);
     color: var(--inc-yin-7);
     font-size: 1rem;
     line-height: inherit;
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
 
   p {

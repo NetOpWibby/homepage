@@ -44,6 +44,9 @@
     color: var(--inc-yin-7);
     font-size: 1rem;
     line-height: inherit;
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
 
   blockquote {

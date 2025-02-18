@@ -64,10 +64,6 @@
 </script>
 
 <style lang="scss">
-  h2, ul {
-    line-height: 1;
-  }
-
   h2 {
     margin: 0 0 calc(var(--padding) * 2); padding: var(--padding) calc(var(--padding) * 2);
 
@@ -75,9 +71,13 @@
     color: var(--inc-yin-7);
     font-size: 1rem;
     line-height: inherit;
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
 
   ul {
+    line-height: 1;
     margin-left: calc(var(--list-indentation) / 2);
     padding: 0 var(--list-indentation) calc(var(--list-indentation) * 4) 0;
 
