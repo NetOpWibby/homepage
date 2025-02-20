@@ -50,7 +50,7 @@
       title: "queree"
     },
     {
-      content: `<p>Around 2017 or so I had the idea of a new kind of social network that brought back the great parts of Myspace while empowering people with comprehensive customization, data, and moderation tools. Bluesky does an excellent job with the latter but being VC-backed means it's only a matter of time before enshittification.</p><p>I gave myself a deadline of 2025.01.01 to launch but we'll see. Sign up for updates <a href="https://socii.network" target="_blank">on socii.network</a>.</p>`,
+      content: `<p>Around 2017 or so I had the idea of a new kind of social network that brought back the great parts of Myspace while empowering people with comprehensive customization, data, and moderation tools. Bluesky does an excellent job with the latter but being VC-backed means it's only a matter of time before enshittification.</p><p>Work in progress. Sign up for updates <a href="https://socii.network" target="_blank">on socii.network</a>.</p>`,
       id: "006",
       media: [
         "/images/projects/socii_01.jpg"
@@ -68,7 +68,7 @@
     margin: 0 0 calc(var(--padding) * 2); padding: var(--padding) calc(var(--padding) * 2);
 
     background-color: var(--color-border);
-    color: var(--inc-yin-7);
+    color: var(--uchu-yin-7);
     font-size: 1rem;
     line-height: inherit;
     position: sticky;
@@ -148,7 +148,7 @@
     width: 100%;
 
     :global(a) {
-      text-decoration: underline var(--inc-yin-2);
+      text-decoration: underline var(--uchu-yin-2);
     }
   }
 

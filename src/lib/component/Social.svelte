@@ -41,7 +41,7 @@
     margin: 0 0 calc(var(--padding)* 2); padding: var(--padding) calc(var(--padding) * 2);
 
     background-color: var(--color-border);
-    color: var(--inc-yin-7);
+    color: var(--uchu-yin-7);
     font-size: 1rem;
     line-height: inherit;
     position: sticky;

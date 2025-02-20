@@ -110,8 +110,8 @@
     transition: none;
 
     &:hover {
-      color: var(--inc-yin-4);
-      text-decoration: underline var(--inc-yin-2);
+      color: var(--uchu-yin-4);
+      text-decoration: underline var(--uchu-yin-2);
     }
   }
 </style>

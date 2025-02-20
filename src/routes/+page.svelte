@@ -16,7 +16,7 @@
 
 <style lang="scss">
   :root {
-    --color-border: var(--inc-yin-2);
+    --color-border: var(--uchu-yin-2);
   }
 
   section {
@@ -46,7 +46,7 @@
   }
 
   .with-background {
-    background-color: var(--inc-gray-2);
+    background-color: var(--uchu-gray-2);
   }
 </style>
 

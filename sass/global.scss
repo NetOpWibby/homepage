@@ -4,9 +4,9 @@
 @include mixin.font-plus-italics(600, "/type/sans", "webb sans");
 
 :root {
-  --color-background: var(--inc-gray-1);
-  --color-border: var(--inc-gray-3);
-  --color-foreground: var(--inc-yin-8);
+  --color-background: var(--uchu-gray-1);
+  --color-border: var(--uchu-gray-3);
+  --color-foreground: var(--uchu-yin-8);
   --font-mono: "webb mono";
   --font-sans: "webb sans";
   --font-size: 16px;

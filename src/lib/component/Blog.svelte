@@ -125,10 +125,10 @@
 
 <style lang="scss">
   h2 {
-    margin: 0 0 calc(var(--padding)* 2); padding: var(--padding) calc(var(--padding) * 2);
+    margin: 0 0 calc(var(--padding) * 2); padding: var(--padding) calc(var(--padding) * 2);
 
     background-color: var(--color-border);
-    color: var(--inc-yin-7);
+    color: var(--uchu-yin-7);
     font-size: 1rem;
     line-height: inherit;
     position: sticky;
@@ -179,8 +179,8 @@
     cursor: pointer;
 
     &:hover {
-      color: var(--inc-yin-4);
-      text-decoration: underline var(--inc-yin-2);
+      color: var(--uchu-yin-4);
+      text-decoration: underline var(--uchu-yin-2);
     }
   }
 
@@ -203,11 +203,11 @@
   }
 
   :global(.date) {
-    color: var(--inc-yin-3);
+    color: var(--uchu-yin-3);
   }
 
   :global(.special-char) {
-    color: var(--inc-yin-3);
+    color: var(--uchu-yin-3);
   }
 </style>
 

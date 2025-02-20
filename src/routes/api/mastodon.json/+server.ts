@@ -17,6 +17,7 @@ export const POST = async({ fetch }) => {
     });
 
     const { orderedItems } = await response.json();
+    // @ts-ignore | Property "object" does not exist on type "{ [key: string]: any; } | undefined".
     const { object } = findCreateType(orderedItems);
 
     return json({
@@ -27,7 +28,7 @@ export const POST = async({ fetch }) => {
     });
   } catch(welp) {
     console.error("Error fetching latest Mastodon post:", welp);
-    return error(welp);
+    return error(500);
   }
 };
 
@@ -39,15 +40,20 @@ function findCreateType(arr: Array<{ [key: string]: any }>): { [key: string]: an
   return arr.find(obj => obj.type === "Create");
 }
 
-function processAttachments(attachments: Array<any>) {
+function processAttachments(attachments: Array<{ [key: string]: any }>): Array<string> {
   const media = [];
 
-  for (const attachment of attachments) {
-    // TODO
-    // : use blurhash given to us by mastodon
-    // : https://github.com/woltapp/blurhash/tree/master/TypeScript#example
-    // : `attachment` comes with blurhash, height, mediaType, width
-    media.push(attachment.url);
+  if (attachments) {
+    for (const attachment of attachments) {
+      // TODO
+      // : use blurhash given to us by mastodon
+      // : https://github.com/woltapp/blurhash/tree/master/TypeScript#example
+      // : `attachment` comes with blurhash, height, mediaType, width
+      // if (attachment && attachment.url)
+
+      // @ts-ignore | Argument of type "any" is not assignable to parameter of type "never".
+      media.push(attachment.url);
+    }
   }
 
   return media;

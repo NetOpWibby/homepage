@@ -233,7 +233,7 @@
     margin: 0 0 calc(var(--padding)* 2); padding: var(--padding) calc(var(--padding) * 2);
 
     background-color: var(--color-border);
-    color: var(--inc-yin-7);
+    color: var(--uchu-yin-7);
     font-size: 1rem;
     line-height: inherit;
     position: sticky;
@@ -278,12 +278,12 @@
     }
 
     a {
-      text-decoration: underline var(--inc-yin-2);
+      text-decoration: underline var(--uchu-yin-2);
     }
   }
 
   :global(.special-char) {
-    color: var(--inc-yin-3);
+    color: var(--uchu-yin-3);
     letter-spacing: -0.05rem;
   }
 </style>

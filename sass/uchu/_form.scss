@@ -9,30 +9,20 @@ fieldset {
     text-transform: lowercase;
 
     &:not(:disabled) {
-      background-color: var(--inc-gray-9);
-      color: var(--inc-gray-2);
+      background-color: var(--uchu-gray-9);
+      color: var(--uchu-gray-2);
       cursor: pointer;
-
-      // @media (prefers-color-scheme: dark) {
-      //   background-color: var(--inc-blue-8);
-      //   color: var(--inc-gray-1);
-      // }
     }
 
     &:disabled {
-      background-color: var(--inc-gray-2);
-      color: var(--inc-gray-6);
+      background-color: var(--uchu-gray-2);
+      color: var(--uchu-gray-6);
       cursor: not-allowed;
-
-      // @media (prefers-color-scheme: dark) {
-      //   background-color: var(--inc-gray-8);
-      //   color: var(--inc-gray-5);
-      // }
     }
   }
 
   label {
-    color: var(--inc-gray-5);
+    color: var(--uchu-gray-5);
     font-size: 80%;
     position: absolute;
     padding-top: 4px;
@@ -41,7 +31,7 @@ fieldset {
 
     + input,
     + select {
-      background-color: var(--inc-gray-2);
+      background-color: var(--uchu-gray-2);
       border: 2px solid;
       transition: border-color 0.2s;
       width: 400px;
@@ -50,31 +40,19 @@ fieldset {
         transition: none;
       }
 
-      // @media (prefers-color-scheme: dark) {
-      //   background-color: var(--inc-gray-9);
-      // }
-
       &::placeholder {
-        color: var(--inc-gray-5);
+        color: var(--uchu-gray-5);
         opacity: 1;
       }
 
       &:not(:focus) {
-        border-color: var(--inc-gray-2);
-
-        // @media (prefers-color-scheme: dark) {
-        //   border-color: var(--inc-gray-8);
-        // }
+        border-color: var(--uchu-gray-2);
       }
 
       &:focus {
-        border-color: var(--inc-blue-4);
+        border-color: var(--uchu-blue-4);
         box-shadow: none;
         outline: none;
-
-        // @media (prefers-color-scheme: dark) {
-        //   border-color: var(--inc-blue-8);
-        // }
       }
     }
 
@@ -90,7 +68,7 @@ fieldset {
       padding: 1.5rem 0.75rem 0.5rem 0.75rem;
 
       &:invalid {
-        border-color: var(--inc-red-5);
+        border-color: var(--uchu-red-5);
         box-shadow: none;
         outline: none;
       }

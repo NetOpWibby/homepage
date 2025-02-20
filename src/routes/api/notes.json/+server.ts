@@ -22,7 +22,7 @@ export const POST = async({ fetch, request }) => {
     return json({ content: replaceLineBreaks(content) });
   } catch(welp) {
     console.error("Error fetching note:", welp);
-    return error(welp);
+    return error(500);
   }
 };
 
@@ -46,6 +46,9 @@ function replaceLineBreaks(text: string): string {
       if (paragraph.startsWith("##") && index !== 0) {
         const headline = paragraph.match(/\#.*/g);
         const content = paragraph.split(/\#.*/g);
+
+        if (!headline)
+          return "";
 
         return headline[0] + "\n\n" + content[1].trim().replace(/\n/g, " ");
       }

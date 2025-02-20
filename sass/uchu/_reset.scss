@@ -34,13 +34,13 @@ address, article, aside, blockquote, dd, dl, dt, fieldset, figure, form, h1, h2,
 a {
   color: inherit;
   cursor: pointer;
-  text-decoration: underline oklch(var(--inc-yin-raw) / 30%);
+  text-decoration: underline oklch(var(--uchu-yin-raw) / 30%);
   transition: all 0.2s;
   white-space: nowrap;
-  -webkit-text-decoration: underline oklch(var(--inc-yin-raw) / 30%); /// safari needs a hand
+  -webkit-text-decoration: underline oklch(var(--uchu-yin-raw) / 30%); /// safari needs a hand
 
   &:hover {
-    color: var(--inc-blue-4);
+    color: var(--uchu-blue-4);
   }
 }
 
@@ -279,7 +279,7 @@ h6 > a {
 
   &:hover {
     color: inherit;
-    text-decoration: underline oklch(var(--inc-yin-raw) / 30%);
+    text-decoration: underline oklch(var(--uchu-yin-raw) / 30%);
   }
 }
 
@@ -343,7 +343,7 @@ select {
   -webkit-appearance: none;
 
   &:focus-visible {
-    outline: 2px solid var(--inc-blue-4);
+    outline: 2px solid var(--uchu-blue-4);
   }
 }
 
@@ -425,7 +425,7 @@ li {
         position: absolute;
         width: 1.1rem;
 
-        @supports ((mask-image: linear-gradient(var(--inc-yin), red))) {
+        @supports ((mask-image: linear-gradient(var(--uchu-yin), red))) {
           mask-position: center center;
           mask-repeat: no-repeat;
           mask-size: contain;
@@ -435,7 +435,7 @@ li {
       &::after {
         background-image: var(--outline-svg-url);
 
-        @supports ((mask-image: linear-gradient(var(--inc-yin), red))) {
+        @supports ((mask-image: linear-gradient(var(--uchu-yin), red))) {
           background-color: var(--foreground-color);
           mask-image: var(--outline-svg-url);
         }
@@ -444,7 +444,7 @@ li {
       &[checked]::before {
         background-image: var(--check-svg-url);
 
-        @supports ((mask-image: linear-gradient(var(--inc-yin), red))) {
+        @supports ((mask-image: linear-gradient(var(--uchu-yin), red))) {
           background-color: var(--foreground-color);
           mask-image: var(--check-svg-url);
         }

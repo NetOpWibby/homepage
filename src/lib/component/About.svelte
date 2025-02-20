@@ -38,7 +38,7 @@
     margin: 0 0 var(--about-padding); padding: var(--padding) var(--about-padding);
 
     background-color: var(--color-border);
-    color: var(--inc-yin-7);
+    color: var(--uchu-yin-7);
     font-size: 1rem;
     line-height: inherit;
     position: sticky;
@@ -75,7 +75,7 @@
 
 <p>I go by NetOperator Wibby, NetOpWibby, or netop://ウエブ pretty much everywhere online. "NetOperator" is the term given to <del>chronically online people</del> internet enthusiasts in the Megaman Battle Network series, one of my favorite game series of all time and constant source of inspiration.</p>
 
-<p><strong>TL;DR career bio:</strong> From college dropout to self-taught designer turned developer during the 2008 recession → Stopped working on music to focus on family and career → lots of startup work → Now I work at a major fruit company. Not bad, eh? Bless the Internet.</p>
+<p><strong>TL;DR career bio:</strong> From college dropout to self-taught designer turned developer during the 2008 recession → Stopped working on music to focus on family and career → lots of startup work → Now I work at a major "fruit" company. Not bad, eh? Bless the Internet.</p>
 
 <p><strong>Short life bio:</strong> Voracious reader, absolutely loved mystery books: Encyclopedia Brown, Hardy Boys, Nancy Drew, Archie Comics, &amp;c. Frequently took things apart and collected scraps to build "inventions." Avid sketcher and jotter of ideas.</p>
 <p>Majorly influenced by Pharrell Williams, Chad Hugo, Timbaland, Clipse, N.E.R.D, Nujabes, Shing02, Fat Jon, Five Deez, &amp;c and wanted to make music and beats. Performed exactly once and was recognized on the street afterwards ("your performance was <em>really</em> good"). Developed a perfectionist mindset, which is to blame for my debut album still under wraps (lyrics still hold up though), among other things.</p>
