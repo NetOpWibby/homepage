@@ -14,7 +14,7 @@
       title: "Aries"
     },
     {
-      content: `<p>This registrar was built upon the Handshake blockchain to sell domain names and provide hosting. I poured everything I've ever wanted in a registrar into this.</p><p>I've stopped working on it due to <a href="https://blog.neuenet.com/post/devlog-014" target="_blank">happenings I didn't agree with</a> happening in the Handshake community. I will come back to beachfront/ when I feel things are better or I fork Handshake.</p>`,
+      content: `<p>This registrar was built upon the Handshake blockchain to sell domain names and provide hosting. I poured everything I've ever wanted in a registrar into this.</p><p>I've stopped working on it due to <a href="https://blog.neuenet.com/post/devlog-014" target="_blank">happenings I didn't agree with</a> happening in the Handshake community. I will come back to beachfront/ when I feel things are better or I <a href="https://dap.sh?ref=webb.page" target="_blank">fork Handshake</a>.</p>`,
       id: "002",
       media: [
         "/images/projects/beachfront_01.jpg",
@@ -33,7 +33,7 @@
       title: "hikari"
     },
     {
-      content: `<p>This registry was built upon the Handshake blockchain to provide infrastructure for my TLDs. I wrote a nameserver in Deno, created a DNSSEC tool to secure said TLDs, and so on. I built and blogged a <strong>lot</strong> about my vision for the internet and freely gave away ideas and a roadmap for others to adopt.</p><p>I've stopped working on it due to <a href="https://blog.neuenet.com/post/devlog-014" target="_blank">happenings I didn't agree with</a> happening in the Handshake community. I will come back to beachfront/ when I feel things are better or I fork Handshake.</p>`,
+      content: `<p>This registry was built upon the Handshake blockchain to provide infrastructure for my TLDs. I wrote a nameserver in Deno, created a DNSSEC tool to secure said TLDs, and so on. I built and blogged a <strong>lot</strong> about my vision for the internet and freely gave away ideas and a roadmap for others to adopt.</p><p>I've stopped working on it due to <a href="https://blog.neuenet.com/post/devlog-014" target="_blank">happenings I didn't agree with</a> happening in the Handshake community. I will come back to beachfront/ when I feel things are better or I <a href="https://dap.sh?ref=webb.page" target="_blank">fork Handshake</a>.</p>`,
       id: "004",
       media: [
         "/images/projects/neuenet_01.jpg",
@@ -57,6 +57,15 @@
       ],
       tagline: "the social network",
       title: "socii"
+    },
+    {
+      content: `<p>After I learned about <a href="https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl?ref=webb.page" target="_blank">the OKLCH color space</a> and saw how much more vibrant colors were than HEX, I delved into creating the perfect color palette for me. I spent nearly a year copy/pasting my CSS variables in my projects until I decided to have a unified place for them.</p><p><em>For some reason</em> <a href="https://news.ycombinator.com/item?id=43072338?ref=webb.page" target="_blank">my post on HackerNews</a> about uchū got super popular, which was neat. 600+ points and 900+ Github stars is wild. A handful of weirdos got irate, which was&hellip;alarming. Maybe touch grass?</p><p>Check out the site at <a href="https://uchu.style?ref=webb.page" target="_blank">uchu.style</a>!</p>`,
+      id: "007",
+      media: [
+        "/images/projects/uchu_01.jpg"
+      ],
+      tagline: "the color palette for internet lovers",
+      title: "uchū"
     }
   ];
 
