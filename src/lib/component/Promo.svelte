@@ -43,6 +43,12 @@
 
     a {
       text-decoration: underline var(--uchu-yin-2);
+
+      span {
+        padding-left: 0.2rem;
+        position: relative;
+        text-decoration: underline var(--uchu-gray-2);
+      }
     }
   }
 </style>
@@ -51,10 +57,10 @@
 
 <ul>
   <li>
-    <a href="https://www.eyebuydirect.com/referral/5217807">EyeBuyDirect (prescription eyewear)</a>
+    <a href="https://www.eyebuydirect.com/referral/5217807">EyeBuyDirect<span> (prescription eyewear)</span></a>
   </li>
 
   <li>
-    <a href="https://lnk.rise-ai.com/68SlyIVHzDVybhw">Moment (iPhone photography/videography tools)</a>
+    <a href="https://lnk.rise-ai.com/68SlyIVHzDVybhw">Moment<span> (iPhone photography/videography tools)</span></a>
   </li>
 </ul>

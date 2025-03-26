@@ -12,6 +12,7 @@
   import Promo from "$lib/component/Promo.svelte";
   import Ring from "$lib/component/Ring.svelte";
   import Social from "$lib/component/Social.svelte";
+  import Uses from "$lib/component/Uses.svelte";
 </script>
 
 <style lang="scss">
@@ -47,6 +48,7 @@
 
   .with-background {
     background-color: var(--uchu-gray-2);
+    overflow-x: hidden;
   }
 </style>
 
@@ -77,6 +79,10 @@
 
   <aside class="with-background">
     <Promo/>
+  </aside>
+
+  <aside class="with-background">
+    <Uses/>
   </aside>
 </section>
 

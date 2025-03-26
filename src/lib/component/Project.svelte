@@ -43,15 +43,24 @@
       title: "Neuenet"
     },
     {
-      content: "<p>There's no point in competing with Google, they've got a 20 year headstart&hellip;but what if you could just ask someone who's knowledgeable af? You do realize Google only has data because of us. Right?</p><p>Anyhoo, there's a lot of parts to make this work and I'm busy with socii at the moment.</p>",
+      content: `<p>I just want a place to upload my Fortnite clips and <del>fuck</del> <em>I'm not a fan of</em> Google. No other platform out there makes sense either so once again, I gotta build what I want to use.</p><p>This is just for me and my friends until the features are where I want them, at which point it'll be a paid service. Follow me on Mastodon if you want updates&hellip;my other networks get infrequent updates.</p>`,
       id: "005",
+      media: [
+        "/images/projects/nickel_01.jpg"
+      ],
+      tagline: "short-form video platform",
+      title: "Nickel"
+    },
+    {
+      content: "<p>There's no point in competing with Google, they've got a 20 year headstart&hellip;but what if you could just ask someone who's knowledgeable af? You do realize Google only has data because of us. Right?</p><p>Anyhoo, there's a lot of parts to make this work and I'm busy with side quests at the moment.</p>",
+      id: "006",
       media: [],
       tagline: "P2P search",
       title: "queree"
     },
     {
-      content: `<p>Around 2017 or so I had the idea of a new kind of social network that brought back the great parts of Myspace while empowering people with comprehensive customization, data, and moderation tools. Bluesky does an excellent job with the latter but being VC-backed means it's only a matter of time before enshittification.</p><p>Work in progress. Sign up for updates <a href="https://socii.network" target="_blank">on socii.network</a>.</p>`,
-      id: "006",
+      content: `<p>Around 2017 or so I had the idea of a new kind of social network that brought back the great parts of Myspace while empowering people with comprehensive customization, data, and moderation tools. Bluesky does an excellent job with the latter but being VC-backed means it's only a matter of time before enshittification.</p><p><del>Work in progress.</del> Mastodon and Bluesky are good enough so I decided to stop working on this.</p>`,
+      id: "007",
       media: [
         "/images/projects/socii_01.jpg"
       ],
@@ -60,7 +69,7 @@
     },
     {
       content: `<p>After I learned about <a href="https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl?ref=webb.page" target="_blank">the OKLCH color space</a> and saw how much more vibrant colors were than HEX, I delved into creating the perfect color palette for me. I spent nearly a year copy/pasting my CSS variables in my projects until I decided to have a unified place for them.</p><p><em>For some reason</em> <a href="https://news.ycombinator.com/item?id=43072338?ref=webb.page" target="_blank">my post on HackerNews</a> about uchū got super popular, which was neat. 600+ points and 900+ Github stars is wild. A handful of weirdos got irate, which was&hellip;alarming. Maybe touch grass?</p><p>Check out the site at <a href="https://uchu.style?ref=webb.page" target="_blank">uchu.style</a>!</p>`,
-      id: "007",
+      id: "008",
       media: [
         "/images/projects/uchu_01.jpg"
       ],
@@ -69,7 +78,7 @@
     }
   ];
 
-  let activeProject = "006";
+  let activeProject = "005";
 </script>
 
 <style lang="scss">

@@ -1,6 +1,6 @@
 {
   "author": {
-    "name": "netop://ウエブ",
+    "name": "netop://ウィビ",
     "url": "https://webb.page"
   },
   "dependencies": {
@@ -9,25 +9,25 @@
     "timeago.js": "^4.0.2"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^4.0.0",
-    "@sveltejs/kit": "^2.17.2",
+    "@sveltejs/adapter-auto": "^5.0.0",
+    "@sveltejs/kit": "^2.20.2",
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "chronver": "*",
     "del-cli": "^6.0.0",
     "husky": "^9.1.7",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.5.1",
-    "sass": "^1.85.0",
+    "prettier": "^3.5.3",
+    "sass": "^1.86.0",
     "sass-lint": "^1.13.1",
-    "stylelint": "^16.14.1",
+    "stylelint": "^16.17.0",
     "stylelint-order": "^6.0.4",
-    "svelte": "^5.20.2",
+    "svelte": "^5.25.3",
     "svelte-adapter-bun": "^0.5.2",
-    "svelte-check": "^4.1.4",
+    "svelte-check": "^4.1.5",
     "svelte-preprocess": "^6.0.3",
-    "typescript": "^5.7.3",
+    "typescript": "^5.8.2",
     "updates": "^16.4.2",
-    "vite": "^6.1.1"
+    "vite": "^6.2.3"
   },
   "name": "homepage",
   "private": true,
@@ -52,5 +52,5 @@
     "watch:sass": "sass --watch sass/uchu:static --style compressed"
   },
   "type": "module",
-  "version": "2025.02.19.1"
+  "version": "2025.03.26"
 }
