@@ -104,6 +104,10 @@
         }
       }
     }
+
+    img {
+      image-rendering: pixelated;
+    }
   }
 
   :global(a) {
