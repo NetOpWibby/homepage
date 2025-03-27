@@ -127,4 +127,7 @@
   <a href="https://social.coop/@netopwibby" target="_blank">@netopwibby@social.coop</a>
   <a href="https://bsky.app/profile/webb.page" target="_blank">@webb.page</a>
   <em>scroll vertically to scroll horizontally</em>
+  <img alt="" src="/88x31/a.gif"/>
+  <img alt="" src="/88x31/b.gif"/>
+  <img alt="" src="/88x31/c.gif"/>
 </aside>
