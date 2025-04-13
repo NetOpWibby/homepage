@@ -5,6 +5,7 @@
   //// component
   import About from "$lib/component/About.svelte";
   import Blog from "$lib/component/Blog.svelte";
+  import CV from "$lib/component/CV.svelte";
   import Music from "$lib/component/Music.svelte";
   import MyMusic from "$lib/component/MyMusic.svelte";
   import Notes from "$lib/component/Notes.svelte";
@@ -59,6 +60,12 @@
 <section>
   <aside class="with-background">
     <About/>
+  </aside>
+</section>
+
+<section>
+  <aside class="with-background">
+    <CV/>
   </aside>
 </section>
 
