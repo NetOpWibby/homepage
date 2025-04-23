@@ -11,7 +11,6 @@
 
     try {
       const response = await fetch("/api/cv.json", {
-        // body: JSON.stringify({ filename: slug }),
         headers: {
           "Accept": "application/json",
           "Content-Type": "application/json"

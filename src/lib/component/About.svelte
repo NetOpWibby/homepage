@@ -14,7 +14,9 @@
     "/images/netopwibby/08.jpg",
     "/images/netopwibby/09.jpg",
     "/images/netopwibby/10.jpg",
-    "/images/netopwibby/11.jpg"
+    "/images/netopwibby/11.jpg",
+    "/images/netopwibby/12.jpg",
+    "/images/netopwibby/13.jpg"
   ];
 
   let selfie = "";
