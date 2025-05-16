@@ -1,6 +1,7 @@
 <script lang="ts">
   //// var
   const posts = [
+    "2025-05-14-next-generation-computing.txt",
     "2025-04-30-stalwart-tips-n-tricks.txt",
     "2025-04-25-enter-the-matrix.txt",
     "2025-03-27-spitball-with-claude.txt",
