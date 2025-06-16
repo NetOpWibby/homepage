@@ -34,6 +34,11 @@
       url: "https://claude.ai"
     },
     {
+      comment: "i'm not using their AI stuff though",
+      name: "Dia",
+      url: "https://www.diabrowser.com"
+    },
+    {
       comment: "when Arc is being dumb",
       name: "Firefox",
       url: "https://www.mozilla.org/en-US/firefox"
