@@ -1,6 +1,7 @@
 <script lang="ts">
   //// var
   const notes = [
+    "012-via-macos-keyboard.txt",
     "011-pixel-perfect-ffmpeg-gifs.txt",
     "010-internet-birthday.txt",
     "009-write-human-code.txt",
