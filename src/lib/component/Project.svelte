@@ -24,6 +24,15 @@
       title: "beachfront/"
     },
     {
+      content: `<p>In 2019 I was sick of using SemVer so I made something better (for me). Check it out at <a href="https://chronver.org?ref=webb.page">chronver.org</a>!</p>`,
+      id: "009",
+      media: [
+        "/images/projects/chronver.jpg"
+      ],
+      tagline: "chronologic/calendar-based versioning system",
+      title: "ChronVer"
+    },
+    {
       content: "<p>In 2014 I had the idea for a &ldquo;responsive operating system&rdquo; that could run on any device from a Raspberry Pi to a desktop PC.</p><p>There's no reason why a neat OS GUI shouldn't look as good as anime interfaces.</p>",
       id: "003",
       media: [
@@ -43,7 +52,7 @@
       title: "Neuenet"
     },
     {
-      content: `<p>I just want a place to upload my Fortnite clips and <del>fuck</del> <em>I'm not a fan of</em> Google. No other platform out there makes sense either so once again, I gotta build what I want to use.</p><p>This is just for me and my friends until the features are where I want them, at which point it'll be a paid service. Follow me on Mastodon if you want updates&hellip;my other networks get infrequent updates.</p>`,
+      content: `<p>I just want a place to upload my Fortnite clips and <del>fuck</del> <em>I'm not a fan of</em> Google. No other platform out there makes sense either so once again, I gotta build what I want to use.</p><p>This is just for me and my friends until the features are where I want them, at which point it'll be a paid service. Follow me on Mastodon if you want updates&hellip;my other networks get infrequent updates.</p><p>Check it out at <a href="https://nickel.video?ref=webb.page">nickel.video</a>!</p>`,
       id: "005",
       media: [
         "/images/projects/nickel_01.jpg"

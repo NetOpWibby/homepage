@@ -1,6 +1,7 @@
 <script lang="ts">
   //// var
   const posts = [
+    "2025-07-25-chronver-chronologic-versioning.txt",
     "2025-07-07-in-defense-of-ai.txt",
     "2025-06-16-introducing-nickel.txt",
     "2025-05-20-good-grief.txt",
