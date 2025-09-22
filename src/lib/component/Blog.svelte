@@ -1,6 +1,7 @@
 <script lang="ts">
   //// var
   const posts = [
+    "2025-08-21-dap-the-handshake-successor.txt",
     "2025-07-25-chronver-chronologic-versioning.txt",
     "2025-07-07-in-defense-of-ai.txt",
     "2025-06-16-introducing-nickel.txt",

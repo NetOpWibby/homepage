@@ -52,5 +52,5 @@
     "watch:sass": "sass --watch sass/uchu:static --style compressed"
   },
   "type": "module",
-  "version": "2025.09.11"
+  "version": "2025.09.22"
 }

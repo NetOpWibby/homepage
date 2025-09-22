@@ -36,7 +36,7 @@
       content: "<p>In 2014 I had the idea for a &ldquo;responsive operating system&rdquo; that could run on any device from a Raspberry Pi to a desktop PC.</p><p>There's no reason why a neat OS GUI shouldn't look as good as anime interfaces.</p>",
       id: "003",
       media: [
-        "/images/projects/hikari_01.mp4"
+        "https://nickel.video/embed/9Ik01L_lK5n1"
       ],
       tagline: "responsive operating system",
       title: "hikari"
@@ -87,7 +87,7 @@
     }
   ];
 
-  let activeProject = "005";
+  let activeProject = "003";
 </script>
 
 <style lang="scss">
@@ -183,6 +183,12 @@
     margin-bottom: 0;
   }
 
+  iframe {
+    aspect-ratio: 16 / 9;
+    margin-top: calc(var(--padding) * 2);
+    width: 100%;
+  }
+
   video {
     padding-top: calc(var(--padding) * 2);
     width: 100%;
@@ -210,6 +216,8 @@
                   <source src={mediaItem}/>
                 </video>
               </figure>
+            {:else if mediaItem.includes("nickel.video")}
+              <iframe src={mediaItem} title=""></iframe>
             {:else}
               <figure>
                 <img alt="" src={mediaItem}/>
