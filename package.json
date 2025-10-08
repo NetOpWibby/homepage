@@ -32,15 +32,15 @@
   "name": "homepage",
   "private": true,
   "scripts": {
-    "build": "bun run clean && bun run render && vite build",
+    "build": "bun run clean && bun run render && bunx vite build",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "clean": "del './build' './static/uchu*'",
+    "clean": "del './build' './static/uchu*' '.svelte-kit' 'bun.lock' 'bun.lockb'",
     "increment": "chronver --increment package",
     "lint": "bun run test:svelte && bun run test:typescript",
     "pre-commit": "bun run build && bun run increment && git add -A :/",
     "prepare": "husky",
-    "preview": "vite preview",
+    "preview": "bunx vite preview",
     "render": "sass sass/uchu:static --style compressed",
     "start": "bun i && bun run build && PORT=6433 SETTINGS=production bun ./build/index.js",
     "test": "run-s test:*",
@@ -48,9 +48,9 @@
     "test:svelte": "svelte-check",
     "test:typescript": "tsc --noEmit",
     "watch": "bun run render && run-p watch:*",
-    "watch:develop": "SETTINGS=development vite dev --port 6433 --host --open",
+    "watch:develop": "SETTINGS=development bunx vite dev --port 6433 --host --open",
     "watch:sass": "sass --watch sass/uchu:static --style compressed"
   },
   "type": "module",
-  "version": "2025.10.08"
+  "version": "2025.10.08.1"
 }
