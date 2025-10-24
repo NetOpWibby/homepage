@@ -36,10 +36,31 @@
     <title>the webb page</title>
 
     %sveltekit.head%
+
+    <style>
+      noscript {
+        background-color: var(--uchu-red-3);
+        color: var(--uchu-yin);
+        padding: 1rem;
+        position: fixed;
+        text-align: center;
+        width: calc(100% - 3rem);
+        z-index: 10;
+
+        a {
+          font-weight: 600;
+
+          &:hover {
+            color: inherit;
+            text-decoration-color: var(--uchu-yin);
+          }
+        }
+      }
+    </style>
   </head>
 
   <body data-sveltekit-preload-data="tap">
-    <noscript>Hey there! You should check out <a href="https://plain.webb.page">plain.webb.page</a>, instead of this JS nonsense.</noscript>
+    <noscript>Hey there! You should check out <a href="https://lite.webb.page">lite.webb.page</a>, instead of this JS nonsense.</noscript>
     <div style="display: contents">%sveltekit.body%</div>
   </body>
 </html>
