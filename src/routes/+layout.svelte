@@ -137,7 +137,7 @@
   <span>paul@webb.page</span>
   <!-- <a href="https://netopwibby.socii.network" target="_blank">socii@netopwibby</a> -->
   <a href="https://social.coop/@netopwibby" target="_blank">@netopwibby@social.coop</a>
-  <a href="https://bsky.app/profile/webb.page" target="_blank">@webb.page</a>
+  <a href="https://blacksky.community/profile/webb.page" target="_blank">@webb.page</a>
   <em>scroll vertically to scroll horizontally</em>
   <img alt="" src="/88x31/a.gif"/>
   <img alt="" src="/88x31/b.gif"/>

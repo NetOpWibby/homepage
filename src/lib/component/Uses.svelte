@@ -14,7 +14,7 @@
       url: "https://alacritty.org"
     },
     {
-      comment: "when songs aren't on Bandcamp",
+      comment: "when songs aren’t on Bandcamp",
       name: "Apple Music",
       url: "https://music.apple.com"
     },
@@ -34,16 +34,6 @@
       url: "https://claude.ai"
     },
     {
-      comment: "i'm not using their AI stuff though",
-      name: "Dia",
-      url: "https://www.diabrowser.com"
-    },
-    {
-      comment: "when Arc is being dumb",
-      name: "Firefox",
-      url: "https://www.mozilla.org/en-US/firefox"
-    },
-    {
       comment: "the best database on the planet",
       name: "Gel",
       url: "https://www.geldata.com"
@@ -54,19 +44,9 @@
       url: "https://ghostty.org"
     },
     {
-      comment: "trying to make this my default browser",
-      name: "Horse",
-      url: "https://gethorse.com"
-    },
-    {
       comment: "best search engine after Neeva sold out",
       name: "Kagi",
       url: "https://kagi.com"
-    },
-    {
-      comment: "kinda keeping track of my coding TODOs",
-      name: "Linear",
-      url: "https://linear.app"
     },
     {
       comment: "taking notes on the go",
@@ -74,7 +54,7 @@
       url: "https://uselumen.com"
     },
     {
-      comment: "one day I'll graduate to hosting Stalwart instead",
+      comment: "one day I’ll graduate to hosting my own IMAP software instead",
       name: "Mail-in-a-Box",
       url: "https://mailinabox.email"
     },
