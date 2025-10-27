@@ -13,6 +13,7 @@
   import Promo from "$lib/component/Promo.svelte";
   import Ring from "$lib/component/Ring.svelte";
   import Social from "$lib/component/Social.svelte";
+  import Support from "$lib/component/Support.svelte";
   import Uses from "$lib/component/Uses.svelte";
 </script>
 
@@ -64,6 +65,10 @@
 </section>
 
 <section>
+  <aside class="with-background">
+    <Support/>
+  </aside>
+
   <aside class="with-background">
     <CV/>
   </aside>
