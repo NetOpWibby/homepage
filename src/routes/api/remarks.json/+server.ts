@@ -11,24 +11,27 @@ export const POST = async({ fetch, request }) => {
   try {
     const { filename } = await request.json();
 
-    const response = await fetch(`https://blog.webb.page/${String(filename)}`, {
+    const response = await fetch("https://blog.webb.page/remarks/" + String(filename), {
       headers: { "Content-Type": "text/plain" },
       method: "GET"
     });
 
-    const memo = parseMemo(await response.text());
-    memo.push(`   <span class="special-char">[</span><a href="https://blog.webb.page/${String(filename).split(".txt")[0]}">READ</a><span class="special-char">]</span>`, "\n");
+    // const content = await response.text();
+    // return json({ content: parseRemark(content) });
 
-    return json({ content: memo.join("\n") });
+    const remark = parseRemark(await response.text());
+    remark.push(`   <span class="special-char">[</span><a href="https://blog.webb.page/remarks/${String(filename).split(".txt")[0]}">READ</a><span class="special-char">]</span>`, "\n");
+
+    return json({ content: remark.join("\n") });
   } catch(welp) {
-    console.error(`Error fetching memo: ${String(welp)}`);
+    console.error(`Error fetching remark: ${String(welp)}`);
     return error(500);
   }
 };
 
 /*** HELPER ------------------------------------------- ***/
 
-function parseMemo(text: string): string {
+function parseRemark(text: string): string {
   const intro = text.split(/^Body$/m)[0];
   const lines = intro.split("\n").filter(Boolean);
   const format = [""];

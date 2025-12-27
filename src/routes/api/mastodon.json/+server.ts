@@ -1,13 +1,11 @@
 
 
 
-//// import
+/*** IMPORT ------------------------------------------- ***/
 
 import { error, json } from "@sveltejs/kit";
 
-
-
-//// export
+/*** EXPORT ------------------------------------------- ***/
 
 export const POST = async({ fetch }) => {
   try {
@@ -17,7 +15,6 @@ export const POST = async({ fetch }) => {
     });
 
     const { orderedItems } = await response.json();
-    // @ts-ignore | Property "object" does not exist on type "{ [key: string]: any; } | undefined".
     const { object } = findCreateType(orderedItems);
 
     return json({
@@ -27,14 +24,12 @@ export const POST = async({ fetch }) => {
       media: processAttachments(object.attachment)
     });
   } catch(welp) {
-    console.error("Error fetching latest Mastodon post:", welp);
+    console.error(`Error fetching latest Mastodon post: ${String(welp)}`);
     return error(500);
   }
 };
 
-
-
-//// helper
+/*** HELPER ------------------------------------------- ***/
 
 function findCreateType(arr: Array<{ [key: string]: any }>): { [key: string]: any } | undefined {
   return arr.find(obj => obj.type === "Create");

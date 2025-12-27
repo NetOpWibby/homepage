@@ -1,30 +1,27 @@
 <script lang="ts">
-  //// var
-  const notes = [
-    "012-via-macos-keyboard.txt",
-    "011-pixel-perfect-ffmpeg-gifs.txt",
-    "010-internet-birthday.txt",
-    "009-write-human-code.txt",
-    "008-use-your-own-domain-bluesky.txt",
-    "007-goals-and-systems-quote.txt",
-    "006-export-farcaster.txt",
-    "005-youtube-dl-tips.txt",
-    "004-sass-import-breaking.txt",
-    "003-setinterval-typescript.txt",
-    "002-quincy-sinatra-quote.txt",
-    "001-package-control.txt"
+  /*** STATE -------------------------------------------- ***/
+  const remarks = [
+    "WR-012.txt",
+    "WR-011.txt",
+    "WR-010.txt",
+    "WR-009.txt",
+    "WR-008.txt",
+    "WR-007.txt",
+    "WR-006.txt",
+    "WR-005.txt",
+    "WR-004.txt",
+    "WR-003.txt",
+    "WR-002.txt",
+    "WR-001.txt"
   ];
 
-  let selectedNote: string;
-  let selectedNoteContent: string;
+  let selectedRemark: string;
+  let selectedRemarkContent: string;
 
-  //// function
+  /*** HELPER ------------------------------------------- ***/
   function processNote(filename: string): string {
-    const extensionRegex = /\.[^.]+$/;         /// file extension
-    const numberRegex = /^\d{3}/;              /// ###
-    const specialCharsRegex = /[^a-zA-Z0-9]/g; /// special characters
-
-    const dateMatch = filename.match(numberRegex);
+    const extensionRegex = /\.[^.]+$/;         /*** file extension ***/
+    const specialCharsRegex = /[^a-zA-Z0-9]/g; /*** special characters ***/
     const extensionMatch = filename.match(extensionRegex);
     let processedFilename = filename;
     let wrappedExtension = "";
@@ -34,28 +31,19 @@
       wrappedExtension = extensionMatch[0].replace(extensionRegex, (match) => `<span class="special-char">${match}</span>`);
     }
 
-    if (dateMatch) {
-      const date = dateMatch[0];
-      const restOfFilename = processedFilename.slice(date.length);
-      const wrappedDate = `<span class="date">${date}</span>`;
-      const wrappedRestOfFilename = restOfFilename.replace(specialCharsRegex, (match) => `<span class="special-char">${match}</span>`);
-
-      return wrappedDate + wrappedRestOfFilename + wrappedExtension;
-    }
-
     return processedFilename.replace(specialCharsRegex, (match) => `<span class="special-char">${match}</span>`) + wrappedExtension;
   }
 
   async function showNote(slug: string) {
-    if (slug === selectedNote) {
+    if (slug === selectedRemark) {
       document.querySelector("li.active")!.classList.remove("active");
-      selectedNote = ""; /// toggle
+      selectedRemark = ""; /*** toggle ***/
     } else {
-      selectedNoteContent = "\nloading…\n";
-      selectedNote = slug;
+      selectedRemarkContent = "\nloading…\n";
+      selectedRemark = slug;
 
       try {
-        const response = await fetch("/api/notes.json", {
+        const response = await fetch("/api/remarks.json", {
           body: JSON.stringify({ filename: slug }),
           headers: {
             "Accept": "application/json",
@@ -65,7 +53,7 @@
         });
 
         const { content } = await response.json();
-        selectedNoteContent = content;
+        selectedRemarkContent = content;
       } catch(error) {
         console.error(error);
       }
@@ -162,17 +150,17 @@
 </style>
 
 <h2>
-  <a href="https://blog.webb.page/notes" target="_blank">blog.webb.page/notes</a>
+  <a href="https://blog.webb.page/remarks" target="_blank">blog.webb.page/remarks</a>
 </h2>
 
 <ul>
-  {#each notes as note}
-    <li class:active={selectedNote === note}>
-      <button on:click={() => showNote(note)}>{@html processNote(note)}</button>
+  {#each remarks as remark}
+    <li class:active={selectedRemark === remark}>
+      <button on:click={() => showNote(remark)}>{@html processNote(remark)}</button>
 
-      {#if selectedNote === note}
+      {#if selectedRemark === remark}
         <div class="content">
-          {selectedNoteContent}
+          {@html selectedRemarkContent}
         </div>
       {/if}
     </li>

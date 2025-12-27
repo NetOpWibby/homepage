@@ -1,93 +1,93 @@
 <script lang="ts">
-  //// var
-  const posts = [
-    "2025-11-14-macos.txt",
-    "2025-10-08-neutral.txt",
-    "2025-09-28-ikigai.txt",
-    "2025-08-21-dap-the-handshake-successor.txt",
-    "2025-07-25-chronver-chronologic-versioning.txt",
-    "2025-07-07-in-defense-of-ai.txt",
-    "2025-06-16-introducing-nickel.txt",
-    "2025-05-20-good-grief.txt",
-    "2025-05-14-next-generation-computing.txt",
-    "2025-04-30-stalwart-tips-n-tricks.txt",
-    "2025-04-25-enter-the-matrix.txt",
-    "2025-03-27-spitball-with-claude.txt",
-    "2025-03-06-where-is-socii.txt",
-    "2025-03-04-why-i-wont-touch-react.txt",
-    "2024-12-31-year-in-review.txt",
-    "2024-12-20-my-grandma.txt",
-    "2024-12-16-twitter.txt",
-    "2024-11-13-elon-mind-virus.txt",
-    "2024-11-08-farcaster.txt",
-    "2024-11-06-election.txt",
-    "2024-09-16-personal-renaissance.txt",
-    "2024-01-16-manifesto.neue.txt",
-    "2023-07-17-twitter.txt",
-    "2022-04-24-things-i-learned.txt",
-    "2021-08-05-four-years-to-show-and-prove.txt",
-    "2021-05-15-secure-handshake-and-caddy.txt",
-    "2021-02-15-an-update-on-socii.txt",
-    "2021-01-15-the-internet-is-broken.txt",
-    "2021-01-03-new-year-who-dis.txt",
-    "2020-02-27-small-modules-and-plumbing.txt",
-    "2020-01-28-migrating-from-mongo-to-rethink.txt",
-    "2019-12-31-the-next-decade.txt",
-    "2019-12-29-year-in-review.txt",
-    "2019-12-02-a-personal-api.txt",
-    "2019-09-24-a-decade-in-tech.txt",
-    "2019-09-08-socii-dispatch-07.txt",
-    "2019-06-09-future-of-the-operating-system-revisited-i.txt",
-    "2019-03-07-facebook-and-their-bullshit.txt",
-    "2019-01-02-neat-npm-01.txt",
-    "2018-12-31-year-in-review.txt",
-    "2018-12-19-my-wants-for-2019.txt",
-    "2018-08-22-the-fallacy-of-imposter-syndrome.txt",
-    "2018-07-09-socii-dispatch-05.txt",
-    "2018-05-17-decentralization-privacy-and-more.txt",
-    "2018-04-17-socii-dispatch-04.txt",
-    "2018-02-24-socii-dispatch-03.txt",
-    "2018-02-10-using-nginx-express-session-in-production.txt",
-    "2018-02-10-socii-dispatch-02.txt",
-    "2018-02-09-nginx-and-socketio.txt",
-    "2018-01-19-socii-dispatch-01.txt",
-    "2018-01-11-why-the-job-search-sucks.txt",
-    "2017-12-31-year-in-review.txt",
-    "2017-12-30-who-creates-social-networks.txt",
-    "2017-12-05-easy-deployment-with-vagrant.txt",
-    "2017-11-26-antank-case-for-nintendo-switch-review.txt",
-    "2017-11-14-nintendo-switch-browser-capabilities.txt",
-    "2017-11-03-apfs-preboot-volume-woes.txt",
-    "2017-10-29-how-i-met-my-wife.txt",
-    "2017-09-12-iphone-x-dream-phone.txt",
-    "2017-09-03-1984-review.txt",
-    "2017-09-01-interview-with-mailchimp.txt",
-    "2017-08-19-im-done-with-kickstarter.txt",
-    "2017-07-27-neglected-projects.txt",
-    "2017-06-13-beachfront-digital-june-update.txt",
-    "2017-05-06-black-privilege-review.txt",
-    "2017-05-01-v2-of-beachfront-digital-is-live.txt",
-    "2017-04-11-beachfront-digital-april-update.txt",
-    "2017-03-18-nintendo-switch-review.txt",
-    "2017-02-08-roadmap-for-beachfront-digital.txt",
-    "2017-02-07-count-zero-review.txt",
-    "2017-01-25-the-swedish-life.txt",
-    "2017-01-07-macbook-pro-review.txt",
-    "2017-01-01-books-i-plan-to-read-this-year.txt",
-    "2016-12-27-what-ive-achieved-this-year.txt",
-    "2016-12-26-it-begins.txt"
+  /*** STATE -------------------------------------------- ***/
+  const memos = [
+    "WM-078.txt",
+    "WM-077.txt",
+    "WM-076.txt",
+    "WM-075.txt",
+    "WM-074.txt",
+    "WM-073.txt",
+    "WM-072.txt",
+    "WM-071.txt",
+    "WM-070.txt",
+    "WM-069.txt",
+    "WM-068.txt",
+    "WM-067.txt",
+    "WM-066.txt",
+    "WM-065.txt",
+    "WM-064.txt",
+    "WM-063.txt",
+    "WM-062.txt",
+    "WM-061.txt",
+    "WM-060.txt",
+    "WM-059.txt",
+    "WM-058.txt",
+    "WM-057.txt",
+    "WM-056.txt",
+    "WM-055.txt",
+    "WM-054.txt",
+    "WM-053.txt",
+    "WM-052.txt",
+    "WM-051.txt",
+    "WM-050.txt",
+    "WM-049.txt",
+    "WM-048.txt",
+    "WM-047.txt",
+    "WM-046.txt",
+    "WM-045.txt",
+    "WM-044.txt",
+    "WM-043.txt",
+    "WM-042.txt",
+    "WM-041.txt",
+    "WM-040.txt",
+    "WM-039.txt",
+    "WM-038.txt",
+    "WM-037.txt",
+    "WM-036.txt",
+    "WM-035.txt",
+    "WM-034.txt",
+    "WM-033.txt",
+    "WM-032.txt",
+    "WM-031.txt",
+    "WM-030.txt",
+    "WM-029.txt",
+    "WM-028.txt",
+    "WM-027.txt",
+    "WM-026.txt",
+    "WM-025.txt",
+    "WM-024.txt",
+    "WM-023.txt",
+    "WM-022.txt",
+    "WM-021.txt",
+    "WM-020.txt",
+    "WM-019.txt",
+    "WM-018.txt",
+    "WM-017.txt",
+    "WM-016.txt",
+    "WM-015.txt",
+    "WM-014.txt",
+    "WM-013.txt",
+    "WM-012.txt",
+    "WM-011.txt",
+    "WM-010.txt",
+    "WM-009.txt",
+    "WM-008.txt",
+    "WM-007.txt",
+    "WM-006.txt",
+    "WM-005.txt",
+    "WM-004.txt",
+    "WM-003.txt",
+    "WM-002.txt",
+    "WM-001.txt"
   ];
 
-  let selectedPost: string;
-  let selectedPostContent: string;
+  let selectedMemo: string;
+  let selectedMemoContent: string;
 
-  //// function
-  function processPost(filename: string): string {
-    const dateRegex = /^\d{4}-\d{2}-\d{2}/;    /// date format YYYY-MM-DD
-    const extensionRegex = /\.[^.]+$/;         /// file extension
-    const specialCharsRegex = /[^a-zA-Z0-9]/g; /// special characters
-
-    const dateMatch = filename.match(dateRegex);
+  /*** HELPER ------------------------------------------- ***/
+  function processMemo(filename: string): string {
+    const extensionRegex = /\.[^.]+$/;         /*** file extension ***/
+    const specialCharsRegex = /[^a-zA-Z0-9]/g; /*** special characters ***/
     const extensionMatch = filename.match(extensionRegex);
     let processedFilename = filename;
     let wrappedExtension = "";
@@ -97,26 +97,16 @@
       wrappedExtension = extensionMatch[0].replace(extensionRegex, (match) => `<span class="special-char">${match}</span>`);
     }
 
-    if (dateMatch) {
-      const date = dateMatch[0];
-      const restOfFilename = processedFilename.slice(date.length);
-
-      const wrappedDate = `<span class="date">${date}</span>`;
-      const wrappedRestOfFilename = restOfFilename.replace(specialCharsRegex, (match) => `<span class="special-char">${match}</span>`);
-
-      return wrappedDate + wrappedRestOfFilename + wrappedExtension;
-    }
-
     return processedFilename.replace(specialCharsRegex, (match) => `<span class="special-char">${match}</span>`) + wrappedExtension;
   }
 
-  async function showPost(slug: string) {
-    if (slug === selectedPost) {
+  async function showMemo(slug: string) {
+    if (slug === selectedMemo) {
       document.querySelector("li.active")!.classList.remove("active");
-      selectedPost = ""; /// toggle
+      selectedMemo = ""; /*** toggle ***/
     } else {
-      selectedPostContent = "\nloading…\n";
-      selectedPost = slug;
+      selectedMemoContent = "\nloading…\n";
+      selectedMemo = slug;
 
       try {
         const response = await fetch("/api/blog.json", {
@@ -129,7 +119,7 @@
         });
 
         const { content } = await response.json();
-        selectedPostContent = content;
+        selectedMemoContent = content;
       } catch(error) {
         console.error(error);
       }
@@ -230,13 +220,13 @@
 </h2>
 
 <ul>
-  {#each posts as post}
-    <li class:active={selectedPost === post}>
-      <button on:click={() => showPost(post)}>{@html processPost(post)}</button>
+  {#each memos as memo}
+    <li class:active={selectedMemo === memo}>
+      <button on:click={() => showMemo(memo)}>{@html processMemo(memo)}</button>
 
-      {#if selectedPost === post}
+      {#if selectedMemo === memo}
         <div class="content">
-          {selectedPostContent}
+          {@html selectedMemoContent}
         </div>
       {/if}
     </li>

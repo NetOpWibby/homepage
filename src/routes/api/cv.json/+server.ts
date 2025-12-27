@@ -1,13 +1,11 @@
 
 
 
-//// import
+/*** IMPORT ------------------------------------------- ***/
 
 import { error, json } from "@sveltejs/kit";
 
-
-
-//// export
+/*** EXPORT ------------------------------------------- ***/
 
 export const POST = async({ fetch, request }) => {
   try {
@@ -19,14 +17,12 @@ export const POST = async({ fetch, request }) => {
     const content = await response.text();
     return json({ content: processCV(content) });
   } catch(welp) {
-    console.error("Error fetching CV:", welp);
+    console.error(`Error fetching CV: ${String(welp)}`);
     return error(500);
   }
 };
 
-
-
-//// helper
+/*** HELPER ------------------------------------------- ***/
 
 function processCV(text) {
   const sections = text.split(/(^░▒▓[\s\S]*?^---$)/m);
