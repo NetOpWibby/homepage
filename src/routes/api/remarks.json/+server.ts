@@ -16,9 +16,6 @@ export const POST = async({ fetch, request }) => {
       method: "GET"
     });
 
-    // const content = await response.text();
-    // return json({ content: parseRemark(content) });
-
     const remark = parseRemark(await response.text());
     remark.push(`   <span class="special-char">[</span><a href="https://blog.webb.page/remarks/${String(filename).split(".txt")[0]}">READ</a><span class="special-char">]</span>`, "\n");
 
