@@ -4,30 +4,30 @@
     "url": "https://webb.page"
   },
   "dependencies": {
-    "marked": "^16.1.1",
-    "plyr": "^3.7.8",
+    "marked": "^17.0.1",
+    "plyr": "^3.8.4",
     "timeago.js": "^4.0.2"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^6.0.1",
-    "@sveltejs/kit": "^2.26.1",
-    "@sveltejs/vite-plugin-svelte": "^6.1.0",
+    "@sveltejs/adapter-auto": "^7.0.0",
+    "@sveltejs/kit": "^2.49.5",
+    "@sveltejs/vite-plugin-svelte": "^6.2.4",
     "chronver": "*",
-    "del-cli": "^6.0.0",
+    "del-cli": "^7.0.0",
     "husky": "^9.1.7",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.6.2",
-    "sass": "^1.89.2",
+    "prettier": "^3.8.0",
+    "sass": "^1.97.2",
     "sass-lint": "^1.13.1",
-    "stylelint": "^16.22.0",
-    "stylelint-order": "^7.0.0",
-    "svelte": "^5.36.16",
-    "svelte-adapter-bun": "^0.5.2",
-    "svelte-check": "^4.3.0",
+    "stylelint": "^17.0.0",
+    "stylelint-order": "^7.0.1",
+    "svelte": "^5.46.4",
+    "svelte-adapter-bun": "^1.0.1",
+    "svelte-check": "^4.3.5",
     "svelte-preprocess": "^6.0.3",
-    "typescript": "^5.8.3",
-    "updates": "^16.4.4",
-    "vite": "^7.0.6"
+    "typescript": "^5.9.3",
+    "updates": "^17.0.7",
+    "vite": "^7.3.1"
   },
   "name": "homepage",
   "private": true,
@@ -52,5 +52,5 @@
     "watch:sass": "sass --watch sass/uchu:static --style compressed"
   },
   "type": "module",
-  "version": "2026.01.13"
+  "version": "2026.01.15"
 }
