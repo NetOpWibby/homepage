@@ -8,7 +8,7 @@
   import CV from "$lib/component/CV.svelte";
   import Music from "$lib/component/Music.svelte";
   import MyMusic from "$lib/component/MyMusic.svelte";
-  import Notes from "$lib/component/Notes.svelte";
+  import Remarks from "$lib/component/Remarks.svelte";
   import Project from "$lib/component/Project.svelte";
   import Promo from "$lib/component/Promo.svelte";
   import Ring from "$lib/component/Ring.svelte";
@@ -76,7 +76,7 @@
 
 <section>
   <aside class="with-background">
-    <Notes/>
+    <Remarks/>
   </aside>
 
   <aside class="with-background">

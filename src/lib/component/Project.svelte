@@ -33,6 +33,15 @@
       title: "ChronVer"
     },
     {
+      content: `<p>I didn’t like the way things were being run on <a href="https://archive.is/vpZCG?ref=webb.page" target="_blank">the Handshake blockchain</a> but <a href="https://archive.is/TMycF?ref=webb.page" target="_blank">I believe in the vision</a> so I made my own. Dap is the better handshake and it’s entering testnet soon.</p><p>Check it out at <a href="https://dap.sh?ref=webb.page">dap.sh</a>!</p>`,
+      id: "010",
+      media: [
+        "/images/projects/dap.jpg"
+      ],
+      tagline: "a secure foundation for the neue internet",
+      title: "Dap"
+    },
+    {
       content: "<p>In 2014 I had the idea for a &ldquo;responsive operating system&rdquo; that could run on any device from a Raspberry Pi to a desktop PC.</p><p>There's no reason why a neat OS GUI shouldn't look as good as anime interfaces.</p>",
       id: "003",
       media: [
@@ -41,18 +50,18 @@
       tagline: "responsive operating system",
       title: "hikari"
     },
+    // {
+    //   content: `<p>This registry was built upon the Handshake blockchain to provide infrastructure for my TLDs. I wrote a nameserver in Deno, created a DNSSEC tool to secure said TLDs, and so on. I built and blogged a <strong>lot</strong> about my vision for the internet and freely gave away ideas and a roadmap for others to adopt.</p><p>I've stopped working on it due to <a href="https://archive.is/vpZCG?ref=webb.page" target="_blank">happenings I didn't agree with</a> happening in the Handshake community. I will come back to beachfront/ when I feel things are better or I <a href="https://dap.sh?ref=webb.page" target="_blank">fork Handshake</a>.</p>`,
+    //   id: "004",
+    //   media: [
+    //     "/images/projects/neuenet_01.jpg",
+    //     "/images/projects/neuenet_02.jpg"
+    //   ],
+    //   tagline: "registry for the Neue Internet",
+    //   title: "Neuenet"
+    // },
     {
-      content: `<p>This registry was built upon the Handshake blockchain to provide infrastructure for my TLDs. I wrote a nameserver in Deno, created a DNSSEC tool to secure said TLDs, and so on. I built and blogged a <strong>lot</strong> about my vision for the internet and freely gave away ideas and a roadmap for others to adopt.</p><p>I've stopped working on it due to <a href="https://blog.neuenet.com/post/devlog-014" target="_blank">happenings I didn't agree with</a> happening in the Handshake community. I will come back to beachfront/ when I feel things are better or I <a href="https://dap.sh?ref=webb.page" target="_blank">fork Handshake</a>.</p>`,
-      id: "004",
-      media: [
-        "/images/projects/neuenet_01.jpg",
-        "/images/projects/neuenet_02.jpg"
-      ],
-      tagline: "registry for the Neue Internet",
-      title: "Neuenet"
-    },
-    {
-      content: `<p>I just want a place to upload my Fortnite clips and <del>fuck</del> <em>I'm not a fan of</em> Google. No other platform out there makes sense either so once again, I gotta build what I want to use.</p><p>This is just for me and my friends until the features are where I want them, at which point it'll be a paid service. Follow me on Mastodon if you want updates&hellip;my other networks get infrequent updates.</p><p>Check it out at <a href="https://nickel.video?ref=webb.page">nickel.video</a>!</p>`,
+      content: `<p>I just want a place to upload my Fortnite clips and <del>fuck</del> <em>I'm not a fan of</em> Google. No other platform out there makes sense either so once again, I gotta build what I want to use.</p><p>Check it out at <a href="https://nickel.video?ref=webb.page">nickel.video</a>!</p>`,
       id: "005",
       media: [
         "/images/projects/nickel_01.jpg"
@@ -87,7 +96,7 @@
     }
   ];
 
-  let activeProject = "003";
+  let activeProject = "005";
 </script>
 
 <style lang="scss">
