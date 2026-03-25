@@ -1,6 +1,9 @@
 <script lang="ts">
   /*** STATE -------------------------------------------- ***/
   const remarks = [
+    "WR-023.txt",
+    "WR-022.txt",
+    "WR-021.txt",
     "WR-020.txt",
     "WR-019.txt",
     "WR-018.txt",

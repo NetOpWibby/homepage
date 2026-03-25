@@ -1,6 +1,8 @@
 <script lang="ts">
   /*** STATE -------------------------------------------- ***/
   const memos = [
+    "WM-087.txt",
+    "WM-086.txt",
     "WM-085.txt",
     "WM-084.txt",
     "WM-083.txt",
