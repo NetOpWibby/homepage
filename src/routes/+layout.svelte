@@ -109,10 +109,6 @@
       white-space: nowrap;
     }
 
-    .banner-wrapper {
-      width: 100%;
-    }
-
     img {
       image-rendering: pixelated;
     }
@@ -142,6 +138,9 @@
   <img alt="" src="/88x31/a.gif"/>
   <img alt="" src="/88x31/b.gif"/>
   <img alt="" src="/88x31/c.gif"/>
+  <a class="banner-wrapper" href="https://www.webb.page">
+    <img alt="" src="/88x31/d.png"/>
+  </a>
   <a class="banner-wrapper" href="https://ellesho.me/page/?ref=https://webb.page">
     <img alt="" src="/88x31/elle.webp"/>
   </a>
